@@ -1,0 +1,122 @@
+/* Page: Home (index.html) */
+@import url('../style.css');
+
+/* Homepage-specific styles */
+
+/* Hero section inside main */
+.hero {
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.hero h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  color: var(--text-dark);
+  margin: 0 0 0.6rem 0;
+  letter-spacing: -0.01em;
+}
+
+.hero p {
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0.25rem auto 0;
+}
+
+/* Cards grid (homepage topics) */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.4rem;
+  margin-top: 1.25rem;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 1.6rem 1.5rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.card h3 {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  margin: 0 0 0.9rem 0;
+}
+
+.card ul {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.card li {
+  position: relative;
+  padding-left: 1.2rem;
+  color: var(--text-body);
+}
+
+.card li::before {
+  content: '\2192';
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  color: var(--primary);
+}
+
+/* Search */
+.search-wrap {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  margin: 1rem 0 0;
+}
+
+.search-input {
+  width: min(640px, 100%);
+  padding: 0.7rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Mini quiz */
+.quiz-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  max-width: 720px;
+  margin: 1rem auto;
+}
+
+.quiz-card .answers {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+
+.quiz-result {
+  font-weight: 800;
+}
+
+.quiz-card h3 {
+  margin: 0;
+}
+
+.quiz-card .question {
+  margin: 0.5rem 0 0 0;
+}
+
+/* Spacing helper */
+.section-spaced {
+  margin-top: 2rem;
+}

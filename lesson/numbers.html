@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>មេរៀន៖ លេខគត់ និងលេខទសភាគ</title>
+    <link rel="stylesheet" href="../css/numbers.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-brand">គណិតវិទ្យាខ្មែរ</a>
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu">☰</button>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="../index.html">ទំព័រដើម</a></li>
+                <li><a href="../grades/grade7.html">ថ្នាក់ទី ៧</a></li>
+                <li><a href="../grades/grade8.html">ថ្នាក់ទី ៨</a></li>
+                <li><a href="../grades/grade9.html">ថ្នាក់ទី ៩</a></li>
+                <li><a href="../grades/grade10.html">ថ្នាក់ទី ១០</a></li>
+                <li><a href="../grades/grade11.html">ថ្នាក់ទី ១១</a></li>
+                <li><a href="../grades/grade12.html">ថ្នាក់ទី ១២</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>មេរៀន៖ លេខគត់ និងលេខទសភាគ</h1>
+        <nav>
+            <a href="../index.html">ទំព័រដើម</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="section-card section-highlight">
+            <h2>អត្ថបទមេរៀន</h2>
+            <p>សិក្សាអំពីប្រភេទលេខគត់ និងលេខទសភាគ។</p>
+            <div class="km-num-cheatsheet">
+                <h3>លេខខ្មែរ ០-៩</h3>
+                <div class="km-num-grid">
+                    <div class="km-num"><div class="kh">០</div><div class="en">0</div></div>
+                    <div class="km-num"><div class="kh">១</div><div class="en">1</div></div>
+                    <div class="km-num"><div class="kh">២</div><div class="en">2</div></div>
+                    <div class="km-num"><div class="kh">៣</div><div class="en">3</div></div>
+                    <div class="km-num"><div class="kh">៤</div><div class="en">4</div></div>
+                    <div class="km-num"><div class="kh">៥</div><div class="en">5</div></div>
+                    <div class="km-num"><div class="kh">៦</div><div class="en">6</div></div>
+                    <div class="km-num"><div class="kh">៧</div><div class="en">7</div></div>
+                    <div class="km-num"><div class="kh">៨</div><div class="en">8</div></div>
+                    <div class="km-num"><div class="kh">៩</div><div class="en">9</div></div>
+                </div>
+            </div>
+        </section>
+        <section class="section-card">
+            <h2>លំហាត់</h2>
+            <ul>
+                <li>សូមសរសេរលេខគត់ពី ១ ដល់ ១០។</li>
+                <li>សរសេរលេខទសភាគពី ១.១ ដល់ ១.៥។</li>
+            </ul>
+        </section>
+        <section class="section-card">
+            <h2>Quiz</h2>
+            <div class="form-row">
+                <label for="quizInput">បម្លែង ២៥ (ខ្មែរ) <span class="sep">➜</span> អារ៉ាប់</label>
+                <input id="quizInput" class="input" type="text" placeholder="សរសេរ 25">
+                <button class="btn btn-primary" id="quizCheck">ពិនិត្យ</button>
+            </div>
+            <p id="quizMsg" class="quiz-result" aria-live="polite"></p>
+        </section>
+        <section class="section-card">
+            <h2>ឧបករណ៍បម្លែងលេខ</h2>
+            <div class="form-row">
+                <input id="arabicInput" class="input" type="text" inputmode="numeric" placeholder="Arabic ➜ 12345">
+                <span class="sep">➜</span>
+                <input id="khOutput" class="input" type="text" placeholder="Khmer ➜ ១២៣៤៥" readonly>
+            </div>
+            <div class="form-row">
+                <input id="khInput" class="input" type="text" placeholder="Khmer ➜ ១២៣៤៥">
+                <span class="sep">➜</span>
+                <input id="arabicOutput" class="input" type="text" inputmode="numeric" placeholder="Arabic ➜ 12345" readonly>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 មេរៀន លេខគត់ និងលេខទសភាគ</p>
+    </footer>
+    <script>
+    const khDigits = ['០','១','២','៣','៤','៥','៦','៧','៨','៩'];
+    const arabicToKh = (s) => String(s).split('').map(ch => (ch>='0'&&ch<='9') ? khDigits[Number(ch)] : ch).join('');
+    const khToArabic = (s) => String(s).split('').map(ch => { const i = khDigits.indexOf(ch); return i>=0 ? String(i) : ch; }).join('');
+
+    const arIn = document.getElementById('arabicInput');
+    const khOut = document.getElementById('khOutput');
+    const khIn = document.getElementById('khInput');
+    const arOut = document.getElementById('arabicOutput');
+    if (arIn && khOut) { arIn.addEventListener('input', () => { khOut.value = arabicToKh(arIn.value); }); }
+    if (khIn && arOut) { khIn.addEventListener('input', () => { arOut.value = khToArabic(khIn.value); }); }
+
+    const qInput = document.getElementById('quizInput');
+    const qBtn = document.getElementById('quizCheck');
+    const qMsg = document.getElementById('quizMsg');
+    if (qBtn && qInput && qMsg) {
+        qBtn.addEventListener('click', () => {
+            const ans = qInput.value.trim();
+            if (!ans) { qMsg.textContent = 'សូមបញ្ចូលចម្លើយ'; qMsg.style.color = '#b91c1c'; return; }
+            if (ans === '25') { qMsg.textContent = 'ត្រឹមត្រូវ ✅'; qMsg.style.color = '#15803d'; }
+            else { qMsg.textContent = 'មិនត្រឹមត្រូវ ❌ — ចម្លើយត្រឹមត្រូវគឺ 25'; qMsg.style.color = '#b91c1c'; }
+        });
+    }
+    </script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
