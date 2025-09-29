@@ -11,5 +11,15 @@
   padding: 0.4rem 0.6rem;
   min-width: 60px;
 }
-.fraction-box .num { font-weight: 800; color: var(--text-dark); }
-.fraction-box .den { border-top: 2px solid var(--text-muted); width: 100%; text-align: center; color: var(--text-dark); }
+
+.fraction-box .num {
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.fraction-box .den {
+  border-top: 2px solid var(--text-muted);
+  width: 100%;
+  text-align: center;
+  color: var(--text-dark);
+}

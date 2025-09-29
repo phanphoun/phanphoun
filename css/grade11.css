@@ -1,4 +1,588 @@
-/* Page: Grade 11 */
+/* Page: Grade 11 - Advanced Scholar Design */
 @import url('../style.css');
 
-/* Add grade 11-specific overrides below if needed */
+/* Grade 11 Specific Variables */
+:root {
+  --grade11-primary: #0891b2;
+  --grade11-secondary: #06b6d4;
+  --grade11-accent: #14b8a6;
+  --grade11-gradient: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+  --grade11-card-gradient: linear-gradient(135deg, #ecfeff 0%, #cffafe 100%);
+}
+
+body[data-theme='dark'] {
+  --grade11-card-gradient: linear-gradient(135deg, #083344 0%, #164e63 100%);
+}
+
+/* Header Animation - Grade 11 Style */
+header {
+  position: relative;
+  overflow: hidden;
+  background: var(--grade11-gradient);
+  color: white;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2) 0%, transparent 50%),
+              radial-gradient(circle at 70% 70%, rgba(255,255,255,0.1) 0%, transparent 50%),
+              radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05) 0%, transparent 70%);
+  animation: headerWave 12s ease-in-out infinite;
+}
+
+@keyframes headerWave {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(20px, -10px) scale(1.1); }
+  50% { transform: translate(-10px, 20px) scale(0.9); }
+  75% { transform: translate(15px, 10px) scale(1.05); }
+}
+
+header h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  animation: titleFlow 3s ease-in-out infinite;
+}
+
+@keyframes titleFlow {
+  0%, 100% { 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    background: linear-gradient(90deg, #ffffff, #67e8f9, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% { 
+    text-shadow: 2px 2px 20px rgba(103, 232, 249, 0.6);
+    background: linear-gradient(90deg, #67e8f9, #ffffff, #67e8f9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Enhanced Section Cards - Grade 11 */
+.section-card {
+  background: var(--grade11-card-gradient);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-sm);
+}
+
+.section-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, rgba(8, 145, 178, 0.05) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.section-card:hover::after {
+  opacity: 1;
+}
+
+.section-card:hover {
+  transform: translateY(-5px) rotateY(3deg);
+  box-shadow: var(--shadow-md);
+  border-color: var(--grade11-primary);
+}
+
+.section-highlight {
+  background: var(--grade11-gradient);
+  color: white;
+}
+
+.section-highlight .section-title {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Enhanced Lessons Grid - Grade 11 */
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.lesson-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-body);
+  box-shadow: var(--shadow-sm);
+}
+
+.lesson-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(8, 145, 178, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lesson-card:hover::before {
+  opacity: 1;
+}
+
+.lesson-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-md);
+  border-color: var(--grade11-primary);
+  color: var(--grade11-primary);
+}
+
+.lesson-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem 0;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+.lesson-card:hover h4 {
+  color: var(--grade11-primary);
+}
+
+.lesson-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.lesson-card:hover p {
+  color: var(--text-body);
+}
+
+/* Animated Icons - Grade 11 */
+.lesson-card::after {
+  content: '🧠';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--grade11-primary);
+  opacity: 0;
+  transform: translateY(20px) scale(0.5) rotate(180deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.lesson-card:hover::after {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotate(0deg);
+}
+
+/* Progress Section - Grade 11 */
+.progress-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.progress-item {
+  margin-bottom: 1.5rem;
+}
+
+.progress-item:last-child {
+  margin-bottom: 0;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: var(--surface-alt);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--grade11-gradient);
+  border-radius: 6px;
+  transition: width 1s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  animation: progressWave 4s infinite;
+}
+
+@keyframes progressWave {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Stats Cards - Grade 11 */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--grade11-gradient);
+  opacity: 0.1;
+  transition: left 0.5s ease;
+}
+
+.stat-card:hover::before {
+  left: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px) rotateX(8deg);
+  box-shadow: var(--shadow-md);
+  border-color: var(--grade11-primary);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--grade11-primary);
+  margin-bottom: 0.5rem;
+  animation: numberWave 3s ease-in-out infinite;
+}
+
+@keyframes numberWave {
+  0%, 100% { transform: translateY(0) scale(1); }
+  25% { transform: translateY(-5px) scale(1.05); }
+  50% { transform: translateY(-10px) scale(1.1); }
+  75% { transform: translateY(-5px) scale(1.05); }
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Floating Tool Icons - Grade 11 */
+.floating-tool-icons {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.tool-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.tool-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  background: var(--surface);
+  color: var(--primary);
+}
+
+
+
+/* Advanced Features - Grade 11 */
+.advanced-feature {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.advanced-feature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--grade11-gradient);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.advanced-feature:hover::before {
+  transform: scaleX(1);
+}
+
+.advanced-feature:hover {
+  transform: translateX(8px) translateY(-3px) rotateZ(2deg);
+  box-shadow: var(--shadow-md);
+}
+
+/* Interactive Elements - Grade 11 */
+.interactive-badge {
+  display: inline-block;
+  background: var(--grade11-gradient);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  animation: badgeWave 2.5s ease-in-out infinite;
+}
+
+@keyframes badgeWave {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-3px) rotate(3deg); }
+  50% { transform: translateY(-6px) rotate(0deg); }
+  75% { transform: translateY(-3px) rotate(-3deg); }
+}
+
+/* Responsive Design - Grade 11 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .lessons-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .floating-tool-icons {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
+  .tool-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 2rem 0;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .section-card {
+    padding: 1.5rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Loading Animation - Grade 11 */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Entrance Animations - Grade 11 */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-card {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.lesson-card {
+  animation: slideInUp 0.8s ease-out;
+}
+
+.lesson-card:nth-child(1) { animation-delay: 0.1s; }
+.lesson-card:nth-child(2) { animation-delay: 0.2s; }
+.lesson-card:nth-child(3) { animation-delay: 0.3s; }
+.lesson-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Special Effects - Grade 11 */
+.wave-effect {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--grade11-primary), transparent);
+  pointer-events: none;
+  animation: waveMove 3s infinite;
+}
+
+@keyframes waveMove {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Scholar Achievement Badge */
+.scholar-badge {
+  display: inline-block;
+  background: var(--grade11-gradient);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  animation: scholarPulse 4s ease-in-out infinite;
+}
+
+@keyframes scholarPulse {
+  0%, 100% { transform: scale(1) rotate(0deg); box-shadow: 0 0 0 0 rgba(8, 145, 178, 0.4); }
+  50% { transform: scale(1.05) rotate(2deg); box-shadow: 0 0 0 10px rgba(8, 145, 178, 0); }
+}
+
+/* Knowledge Flow Animation */
+.knowledge-flow {
+  position: relative;
+  overflow: hidden;
+}
+
+.knowledge-flow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background: var(--grade11-primary);
+  border-radius: 50%;
+  animation: flowMove 5s linear infinite;
+}
+
+@keyframes flowMove {
+  0% { left: -10px; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: calc(100% + 10px); opacity: 0; }
+}
+
+/* Advanced Hover Effects */
+.lesson-card {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.lesson-card:hover {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+/* Glowing Border Effect */
+.glow-border {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(var(--surface), var(--surface)) padding-box,
+              var(--grade11-gradient) border-box;
+  border-radius: var(--radius-md);
+}
+
+.glow-border:hover {
+  box-shadow: 0 0 20px rgba(8, 145, 178, 0.5);
+}

@@ -1,4 +1,538 @@
-/* Page: Grade 9 */
+/* Page: Grade 9 - Tech Innovation Design */
 @import url('../style.css');
 
-/* Add grade 9-specific overrides below if needed */
+/* Grade 9 Specific Variables */
+:root {
+  --grade9-primary: #0d9488;
+  --grade9-secondary: #10b981;
+  --grade9-accent: #06b6d4;
+  --grade9-gradient: linear-gradient(135deg, #0d9488 0%, #10b981 100%);
+  --grade9-card-gradient: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+}
+
+body[data-theme='dark'] {
+  --grade9-card-gradient: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+}
+
+/* Header Animation - Grade 9 Tech Style */
+header {
+  position: relative;
+  overflow: hidden;
+  background: var(--grade9-gradient);
+  color: white;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%),
+    linear-gradient(-45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+  animation: techGrid 4s linear infinite;
+}
+
+@keyframes techGrid {
+  0% { transform: translateX(-100%) translateY(-100%); }
+  100% { transform: translateX(100%) translateY(100%); }
+}
+
+header h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  animation: techPulse 2s ease-in-out infinite;
+}
+
+@keyframes techPulse {
+  0%, 100% { 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    transform: scale(1);
+  }
+  50% { 
+    text-shadow: 2px 2px 15px rgba(6, 182, 212, 0.6);
+    transform: scale(1.05);
+  }
+}
+
+/* Enhanced Section Cards - Grade 9 Tech */
+.section-card {
+  background: var(--grade9-card-gradient);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-sm);
+}
+
+.section-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--grade9-primary), var(--grade9-secondary), var(--grade9-accent));
+  border-radius: var(--radius-lg);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.section-card:hover::before {
+  opacity: 0.1;
+}
+
+.section-card:hover {
+  transform: translateY(-8px) rotateX(5deg);
+  box-shadow: var(--shadow-md);
+  border-color: var(--grade9-primary);
+}
+
+.section-highlight {
+  background: var(--grade9-gradient);
+  color: white;
+}
+
+.section-highlight .section-title {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Enhanced Lessons Grid - Grade 9 Tech */
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.lesson-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-body);
+  box-shadow: var(--shadow-sm);
+}
+
+.lesson-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(13, 148, 136, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.lesson-card:hover::before {
+  left: 100%;
+}
+
+.lesson-card:hover {
+  transform: translateY(-10px) scale(1.03) rotateY(5deg);
+  box-shadow: var(--shadow-md);
+  border-color: var(--grade9-primary);
+  color: var(--grade9-primary);
+}
+
+.lesson-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.lesson-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem 0;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+.lesson-card:hover h4 {
+  color: var(--grade9-primary);
+}
+
+.lesson-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.lesson-card:hover p {
+  color: var(--text-body);
+}
+
+/* Animated Icons - Grade 9 Tech */
+.lesson-card::after {
+  content: '💻';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--grade9-primary);
+  opacity: 0;
+  transform: scale(0) rotate(-180deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 2;
+}
+
+.lesson-card:hover::after {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+/* Progress Section - Grade 9 Tech */
+.progress-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.progress-item {
+  margin-bottom: 1.5rem;
+}
+
+.progress-item:last-child {
+  margin-bottom: 0;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: var(--surface-alt);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--grade9-gradient);
+  border-radius: 6px;
+  transition: width 1s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  animation: techProgress 2s linear infinite;
+}
+
+@keyframes techProgress {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Stats Cards - Grade 9 Tech */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: conic-gradient(from 0deg, var(--grade9-primary), var(--grade9-secondary), var(--grade9-accent), var(--grade9-primary));
+  border-radius: var(--radius-md);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.stat-card:hover::before {
+  opacity: 0.05;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px) rotateX(10deg) rotateY(10deg) scale(1.05);
+  box-shadow: var(--shadow-md);
+  border-color: var(--grade9-primary);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--grade9-primary);
+  margin-bottom: 0.5rem;
+  animation: techNumber 3s ease-in-out infinite;
+}
+
+@keyframes techNumber {
+  0%, 100% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
+  25% { transform: translateY(-8px) rotateX(5deg) rotateY(5deg); }
+  50% { transform: translateY(0) rotateX(-5deg) rotateY(-5deg); }
+  75% { transform: translateY(8px) rotateX(5deg) rotateY(-5deg); }
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Floating Tool Icons - Grade 9 Tech */
+.floating-tool-icons {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.tool-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.tool-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  background: var(--surface);
+  color: var(--primary);
+}
+
+
+
+/* Advanced Features - Grade 9 Tech */
+.advanced-feature {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.advanced-feature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--grade9-primary), var(--grade9-secondary), var(--grade9-accent));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.advanced-feature:hover::before {
+  transform: scaleX(1);
+}
+
+.advanced-feature:hover {
+  transform: translateX(8px) translateY(-4px) rotateZ(2deg);
+  box-shadow: var(--shadow-md);
+}
+
+/* Interactive Elements - Grade 9 Tech */
+.interactive-badge {
+  display: inline-block;
+  background: var(--grade9-gradient);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  animation: techBadge 3s ease-in-out infinite;
+}
+
+@keyframes techBadge {
+  0%, 100% { transform: translateY(0) rotateX(0deg); }
+  25% { transform: translateY(-4px) rotateX(10deg); }
+  75% { transform: translateY(2px) rotateX(-5deg); }
+}
+
+/* Responsive Design - Grade 9 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .lessons-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .floating-tool-icons {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
+  .tool-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 2rem 0;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .section-card {
+    padding: 1.5rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Loading Animation - Grade 9 */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Entrance Animations - Grade 9 */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.section-card {
+  animation: fadeInScale 0.6s ease-out;
+}
+
+.lesson-card {
+  animation: fadeInScale 0.8s ease-out;
+}
+
+.lesson-card:nth-child(1) { animation-delay: 0.1s; }
+.lesson-card:nth-child(2) { animation-delay: 0.2s; }
+.lesson-card:nth-child(3) { animation-delay: 0.3s; }
+.lesson-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Special Effects - Grade 9 Tech */
+.tech-particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--grade9-primary);
+  border-radius: 2px;
+  pointer-events: none;
+  animation: techParticle 4s infinite;
+}
+
+@keyframes techParticle {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-50px) translateX(30px) rotate(180deg);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120px) translateX(80px) rotate(360deg);
+    opacity: 0;
+  }
+}

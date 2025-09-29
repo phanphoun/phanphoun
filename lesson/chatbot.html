@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
+    <title>ជំនួយការឆាត</title>
     <link rel="stylesheet" href="../css/chatbot.css">
-    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -23,21 +22,97 @@
             </ul>
         </div>
     </nav>
+    
     <header>
-        <h1>Chatbot</h1>
+        <h1>ជំនួយការឆាត</h1>
         <nav>
             <a href="../index.html">ទំព័រដើម</a>
         </nav>
     </header>
+    
     <main class="container">
-        <section class="section-card section-highlight">
-            <h2>Chatbot</h2>
-            <p>Chatbot tool (placeholder).</p>
+        <section class="chatbot-section">
+            <div class="chatbot-container">
+                <div class="chatbot-header">
+                    <div class="bot-avatar">
+                        <div class="avatar-icon">🤖</div>
+                    </div>
+                    <div class="bot-info">
+                        <h3>ជំនួយការគណិតវិទ្យា</h3>
+                        <p>ស្ថានភាព: រួចរាល់</p>
+                    </div>
+                    <div class="status-indicator">
+                        <div class="status-dot"></div>
+                    </div>
+                </div>
+                
+                <div class="chat-messages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <p>សួស្តី! ខ្ញុំជាជំនួយការគណិតវិទ្យា។ តើអ្នកអាចជួយខ្ញុំដោយរបៀបណា?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="message user-message">
+                        <div class="message-content">
+                            <p>ខ្ញុំចង់រៀនអំពីសមីការដឺក្រេទីពីរ</p>
+                        </div>
+                        <div class="message-avatar">👤</div>
+                    </div>
+                    
+                    <div class="message bot-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <p>ល្អណាស់! សមីការដឺក្រេទីពីរមានទម្រង់ទូទៅ ax² + bx + c = 0 ។ ខ្ញុំអាចជួយអ្នកយល់ពីរបៀបដោះស្រាយវាតាមរយៈរូបមន្ត quadratic formula។</p>
+                        </div>
+                    </div>
+                    
+                    <div class="message user-message">
+                        <div class="message-content">
+                            <p>សូមអរគុណ! សូមបង្ហាញខ្ញុំពីរបៀបគណនា</p>
+                        </div>
+                        <div class="message-avatar">👤</div>
+                    </div>
+                    
+                    <div class="message bot-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <p>រូបមន្ត quadratic formula គឺ x = (-b ± √(b² - 4ac)) / 2a ។ ដើម្បីដោះស្រាយសមីការដឺក្រេទីពីរ អ្នកត្រូវរកតម្លៃ a, b, និង c ហើយដាក់ក្នុងរូបមន្តនេះ។</p>
+                        </div>
+                    </div>
+                    
+                    <div class="typing-indicator">
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                    </div>
+                </div>
+                
+                <div class="chat-input">
+                    <div class="input-container">
+                        <a href="#send" class="send-btn">📤</a>
+                        <div class="input-placeholder">វាយបញ្ចូលសំណួររបស់អ្នកនៅទីនេះ...</div>
+                    </div>
+                    <div class="quick-actions">
+                        <a href="#help" class="quick-btn">ជំនួយ</a>
+                        <a href="#examples" class="quick-btn">ឧទាហរណ៍</a>
+                        <a href="#topics" class="quick-btn">ប្រធានបទ</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chatbot-info">
+                <h3>ព័ត៌មានអំពីជំនួយការឆាត</h3>
+                <p>នេះគឺជាការរចនាចំណុចប្រទាក់ជំនួយការឆាតដែលប្រើតែ HTML និង CSS ប៉ុណ្ណោះ។</p>
+                <p>ចំណុចប្រទាក់នេះមានបែបផែនទំនើប និងងាយស្រួលប្រើប្រាស់។</p>
+                <p>ដើម្បីឱ្យជំនួយការឆាតដំណើរការពេញលេញ ត្រូវការ JavaScript ដើម្បីដំណើរការការឆ្លើយតបពិតប្រាកដ។</p>
+            </div>
         </section>
     </main>
+    
     <footer>
-        <p>© 2025 Chatbot</p>
+        <p>© 2025 គណិតវិទ្យាខ្មែរ - ជំនួយការឆាត</p>
     </footer>
-    <script src="../js/app.js"></script>
 </body>
 </html>
