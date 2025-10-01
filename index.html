@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>គេហទំព័រ គណិតវិទ្យាខ្មែរ</title>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -23,131 +23,156 @@
         </div>
     </nav>
     <header>
-        <h1>គេហទំព័រ គណិតវិទ្យាខ្មែរ</h1>
-        <p>គេហទំព័រនេះបង្កើតឡើងដើម្បីជួយសិស្សថ្នាក់ទី ៧-១២ រៀនគណិតវិទ្យាភាសាខ្មែរ</p>
+        <div class="header-content">
+            <h1>គេហទំព័រ គណិតវិទ្យាខ្មែរ</h1>
+            <p>គេហទំព័រនេះបង្កើតឡើងដើម្បីជួយសិស្សថ្នាក់ទី ៧-១២ រៀនគណិតវិទ្យាភាសាខ្មែរ</p>
+        </div>
     </header>
 
     <main class="container">
         <section class="hero" id="about">
-            <h2>អំពីគេហទំព័រ</h2>
-            <p>ស្វាគមន៍មកកាន់គេហទំព័រគណិតវិទ្យាខ្មែរ! នៅទីនេះ អ្នកនឹងរកឃើញមេរៀន សំណួរចម្លើយ និងឧបករណ៍ផ្សេងៗដើម្បីជួយសម្រួលដល់ការសិក្សារបស់អ្នក។</p>
-            <div class="search-wrap">
-                <input id="lessonSearch" class="search-input" type="search" placeholder="ស្វែងរកមេរៀន (ឧ. លេខ, សមីការ, ធរណីមាត្រ)">
+            <div class="hero-content">
+                <h2>អំពីគេហទំព័រ</h2>
+                <p>ស្វាគមន៍មកកាន់គេហទំព័រគណិតវិទ្យាខ្មែរ! នៅទីនេះ អ្នកនឹងរកឃើញមេរៀន សំណួរចម្លើយ និងឧបករណ៍ផ្សេងៗដើម្បីជួយសម្រួលដល់ការសិក្សារបស់អ្នក។</p>
+                <div class="search-wrap">
+                    <input id="lessonSearch" class="search-input" type="search" placeholder="🔍 ស្វែងរកមេរៀន (ឧ. លេខ, សមីការ, ធរណីមាត្រ)">
+                </div>
             </div>
         </section>
         
-        <section class="cards-grid">
-            <div class="card">
-                <h3>មេរៀនគណិតវិទ្យា</h3>
-                <ul>
-                    <li>បូក</li>
-                    <li>ដក</li>
-                    <li>គុណ</li>
-                    <li>ចែក</li>
-                    <li>សមីការ</li>
-                    <li>អសមីការ</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>មេរៀនកម្រិតខ្ពស់</h3>
-                <ul>
-                    <li>ធរណីមាត្រ</li>
-                    <li>កោណវិទ្យា</li>
-                    <li>អាល់ហ្សេប្រា</li>
-                    <li>អនុគមន៍</li>
-                    <li>អាំងតេក្រាល</li>
-                    <li>ស្ថិតិ</li>
-                </ul>
+        <section class="features-section">
+            <h2 class="section-title">មុខវិជ្ជាសំខាន់</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>មេរៀនគណិតវិទ្យា</h3>
+                    <ul>
+                        <li>✓ បូក</li>
+                        <li>✓ ដក</li>
+                        <li>✓ គុណ</li>
+                        <li>✓ ចែក</li>
+                        <li>✓ សមីការ</li>
+                        <li>✓ អសមីការ</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔬</div>
+                    <h3>មេរៀនកម្រិតខ្ពស់</h3>
+                    <ul>
+                        <li>✓ ធរណីមាត្រ</li>
+                        <li>✓ កោណវិទ្យា</li>
+                        <li>✓ អាល់ហ្សេប្រា</li>
+                        <li>✓ អនុគមន៍</li>
+                        <li>✓ អាំងតេក្រាល</li>
+                        <li>✓ ស្ថិតិ</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section class="section-spaced">
-            <h2 class="section-title">មេរៀនពិសេស</h2>
+        <section class="lessons-section">
+            <div class="section-header">
+                <h2 class="section-title">មេរៀនពិសេស</h2>
+                <p class="section-subtitle">រៀនគណិតវិទ្យាជាមួយវិធីសាស្ត្រងាយស្រួល</p>
+            </div>
             <div class="lessons-grid" id="lessonsGrid">
                 <a class="lesson-card" href="lesson/numbers.html" data-tags="លេខ លេខគត់ ទសភាគ">
+                    <div class="lesson-icon">🔢</div>
                     <h4>លេខ និងលេខទសភាគ <span class="badge">មូលដ្ឋាន</span></h4>
                     <p>ស្គាល់លេខខ្មែរ ០-៩ និងបម្លែងលេខ។</p>
                 </a>
                 <a class="lesson-card" href="lesson/arithmetic.html" data-tags="បូក ដក គុណ ចែក">
+                    <div class="lesson-icon">➕</div>
                     <h4>ប្រតិបត្តិការគណិតវិទ្យា <span class="badge">មូលដ្ឋាន</span></h4>
                     <p>ធ្វើការ​បូក ដក គុណ ចែក ជាមួយឧទាហរណ៍។</p>
                 </a>
                 <a class="lesson-card" href="lesson/equation.html" data-tags="សមីការ អសមីការ x">
+                    <div class="lesson-icon">📐</div>
                     <h4>សមីការ និងអសមីការ <span class="badge">មធ្យម</span></h4>
                     <p>ដោះស្រាយសមីការងាយៗ និងយល់អំពីសញ្ញា &gt; &lt; =។</p>
                 </a>
                 <a class="lesson-card" href="lesson/geometry.html" data-tags="ធរណីមាត្រ ផ្ទៃក្រឡា រាង">
+                    <div class="lesson-icon">📏</div>
                     <h4>ធរណីមាត្រ <span class="badge">មូលដ្ឋាន</span></h4>
                     <p>ស្គាល់រាង និងគណនាផ្ទៃក្រឡា/បរិវេណ។</p>
                 </a>
                 <a class="lesson-card" href="lesson/fractions.html" data-tags="ភាគ ក្រាសសិន ភាគរយ">
+                    <div class="lesson-icon">🍰</div>
                     <h4>ភាគ (Fractions) <span class="badge">មូលដ្ឋាន</span></h4>
                     <p>ស្គាល់ខ្សែភាគ ទទួលស្គាល់និយមន័យ និងប្រែប្រួលទៅភាគរយ។</p>
                 </a>
             </div>
         </section>
 
-        <section>
+        <section class="quiz-section">
             <div class="quiz-card" id="miniQuiz">
-                <h3>តេស្តលឿន</h3>
-                <p class="question">២ × ៣ = ?</p>
-                <div class="answers">
-                    <label><input type="radio" name="q1" value="5"> 5</label>
-                    <label><input type="radio" name="q1" value="6"> 6</label>
-                    <label><input type="radio" name="q1" value="9"> 9</label>
+                <div class="quiz-header">
+                    <h3>🧠 តេស្តលឿន</h3>
+                    <p>សាកល្បងចំណេះដឹងគណិតវិទ្យារបស់អ្នក!</p>
                 </div>
-                <button class="btn btn-primary" id="quizCheckBtn">ពិនិត្យ</button>
-                <p class="quiz-result" id="quizResult" aria-live="polite"></p>
+                <div class="quiz-content">
+                    <p class="question">២ × ៣ = ?</p>
+                    <div class="answers">
+                        <label><input type="radio" name="q1" value="5"> 5</label>
+                        <label><input type="radio" name="q1" value="6"> 6</label>
+                        <label><input type="radio" name="q1" value="9"> 9</label>
+                    </div>
+                    <button class="btn btn-primary" id="quizCheckBtn">ពិនិត្យ</button>
+                    <p class="quiz-result" id="quizResult" aria-live="polite"></p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 គណិតវិទ្យាខ្មែរ</p>
+        <div class="footer-content">
+            <p>© 2025 គណិតវិទ្យាខ្មែរ - រៀនគណិតវិទ្យាជាមួយភាសាខ្មែរ</p>
+        </div>
     </footer>
-    <button class="floating-tool-btn" id="toolMainBtn" title="Tools">⚙️</button>
-    <div class="floating-tool-icons" id="toolIcons">
-        <button class="tool-icon" title="Chatbot" onclick="window.location.href='lesson/chatbot.html'">💬</button>
-        <button class="tool-icon" title="Calculator" onclick="window.location.href='lesson/calculator.html'">🧮</button>
-    </div>
     <script>
-    // Navbar toggle for mobile
-    const navbarToggle = document.getElementById('navbarToggle');
-    const navbarMenu = document.getElementById('navbarMenu');
-    navbarToggle.addEventListener('click', function() {
-        navbarMenu.classList.toggle('active');
-    });
-
-    // Search filter for lessons
-    const searchInput = document.getElementById('lessonSearch');
-    if (searchInput) {
-        const cards = Array.from(document.querySelectorAll('.lesson-card'));
-        const filter = () => {
-            const q = searchInput.value.toLowerCase().trim();
-            cards.forEach(card => {
-                const text = (card.dataset.tags + ' ' + card.textContent).toLowerCase();
-                card.style.display = q === '' || text.includes(q) ? '' : 'none';
+    // Wait for DOM to be fully loaded before initializing navbar
+    document.addEventListener('DOMContentLoaded', function() {
+        // Navbar toggle for mobile
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+        
+        if (navbarToggle && navbarMenu) {
+            navbarToggle.addEventListener('click', function() {
+                navbarMenu.classList.toggle('active');
             });
-        };
-        searchInput.addEventListener('input', filter);
-    }
+        }
 
-    // Mini quiz
-    const quizBtn = document.getElementById('quizCheckBtn');
-    const quizResult = document.getElementById('quizResult');
-    if (quizBtn && quizResult) {
-        quizBtn.addEventListener('click', () => {
-            const choice = document.querySelector('input[name="q1"]:checked');
-            if (!choice) { quizResult.textContent = 'សូមជ្រើសរើសចម្លើយមួយ'; quizResult.style.color = '#b91c1c'; return; }
-            if (choice.value === '6') {
-                quizResult.textContent = 'ត្រឹមត្រូវ ✅';
-                quizResult.style.color = '#15803d';
-            } else {
-                quizResult.textContent = 'មិនត្រឹមត្រូវ ❌';
-                quizResult.style.color = '#b91c1c';
-            }
-        });
-    }
+        // Search filter for lessons
+        const searchInput = document.getElementById('lessonSearch');
+        if (searchInput) {
+            const cards = Array.from(document.querySelectorAll('.lesson-card'));
+            const filter = () => {
+                const q = searchInput.value.toLowerCase().trim();
+                cards.forEach(card => {
+                    const text = (card.dataset.tags + ' ' + card.textContent).toLowerCase();
+                    card.style.display = q === '' || text.includes(q) ? '' : 'none';
+                });
+            };
+            searchInput.addEventListener('input', filter);
+        }
+
+        // Mini quiz
+        const quizBtn = document.getElementById('quizCheckBtn');
+        const quizResult = document.getElementById('quizResult');
+        if (quizBtn && quizResult) {
+            quizBtn.addEventListener('click', () => {
+                const choice = document.querySelector('input[name="q1"]:checked');
+                if (!choice) { quizResult.textContent = 'សូមជ្រើសរើសចម្លើយមួយ'; quizResult.style.color = '#b91c1c'; return; }
+                if (choice.value === '6') {
+                    quizResult.textContent = 'ត្រឹមត្រូវ ✅';
+                    quizResult.style.color = '#15803d';
+                } else {
+                    quizResult.textContent = 'មិនត្រឹមត្រូវ ❌';
+                    quizResult.style.color = '#b91c1c';
+                }
+            });
+        }
+    });
     </script>
     <script src="js/app.js"></script>
 </body>

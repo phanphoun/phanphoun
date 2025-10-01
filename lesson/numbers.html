@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>មេរៀន៖ លេខគត់ និងលេខទសភាគ</title>
-    <link rel="stylesheet" href="../css/numbers.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -22,11 +22,11 @@
             </ul>
         </div>
     </nav>
-    <header>
-        <h1>មេរៀន៖ លេខគត់ និងលេខទសភាគ</h1>
-        <nav>
-            <a href="../index.html">ទំព័រដើម</a>
-        </nav>
+    <header class="grade-hero">
+        <div class="header-content">
+            <h1>មេរៀន៖ លេខគត់ និងលេខទសភាគ</h1>
+            <p>សូមស្វាគមន៍មកកាន់មេរៀនលេខគត់ និងលេខទសភាគ</p>
+        </div>
     </header>
     <main class="container">
         <section class="section-card section-highlight">
@@ -104,6 +104,18 @@
             else { qMsg.textContent = 'មិនត្រឹមត្រូវ ❌ — ចម្លើយត្រឹមត្រូវគឺ 25'; qMsg.style.color = '#b91c1c'; }
         });
     }
+    
+    // Navbar toggle for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+        
+        if (navbarToggle && navbarMenu) {
+            navbarToggle.addEventListener('click', function() {
+                navbarMenu.classList.toggle('active');
+            });
+        }
+    });
     </script>
     <script src="../js/app.js"></script>
 </body>

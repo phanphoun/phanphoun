@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ម៉ាស៊ីនគិតលេខ</title>
-    <link rel="stylesheet" href="../css/calculator.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -23,11 +23,11 @@
         </div>
     </nav>
     
-    <header>
-        <h1>ម៉ាស៊ីនគិតលេខ</h1>
-        <nav>
-            <a href="../index.html">ទំព័រដើម</a>
-        </nav>
+    <header class="grade-hero">
+        <div class="header-content">
+            <h1>ម៉ាស៊ីនគិតលេខ</h1>
+            <p>ឧបករណ៍គិតលេខអនឡាញសម្រាប់គណិតវិទ្យា</p>
+        </div>
     </header>
     
     <main class="container">
@@ -81,5 +81,19 @@
     <footer>
         <p>© 2025 គណិតវិទ្យាខ្មែរ - ម៉ាស៊ីនគិតលេខ</p>
     </footer>
+    <script>
+    // Navbar toggle for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+        
+        if (navbarToggle && navbarMenu) {
+            navbarToggle.addEventListener('click', function() {
+                navbarMenu.classList.toggle('active');
+            });
+        }
+    });
+    </script>
+    <script src="../js/app.js"></script>
 </body>
 </html>

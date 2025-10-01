@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>មេរៀន៖ ភាគ (Fractions)</title>
-    <link rel="stylesheet" href="../css/fractions.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -14,7 +14,6 @@
             <ul class="navbar-menu" id="navbarMenu">
                 <li><a href="../index.html">ទំព័រដើម</a></li>
                 <li><a href="../grades/grade7.html">ថ្នាក់ទី ៧</a></li>
-                <li><a href="../grades/grade8.html">ថ្នាក់ទី ៨</a></li>
                 <li><a href="../grades/grade9.html">ថ្នាក់ទី ៩</a></li>
                 <li><a href="../grades/grade10.html">ថ្នាក់ទី ១០</a></li>
                 <li><a href="../grades/grade11.html">ថ្នាក់ទី ១១</a></li>
@@ -22,19 +21,35 @@
             </ul>
         </div>
     </nav>
-    <header>
-        <h1>មេរៀន៖ ភាគ (Fractions)</h1>
-        <nav>
-            <a href="../index.html">ទំព័រដើម</a>
-        </nav>
+    <header class="grade-hero">
+        <div class="header-content">
+            <h1>មេរៀន៖ ភាគ (Fractions)</h1>
+            <p>សូមស្វាគមន៍មកកាន់មេរៀនភាគ</p>
+        </div>
     </header>
     <main class="container">
-        <section class="section-card section-highlight">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>ស្វែងយល់អំពីភាគ</h2>
+                <p>រៀនអំពីភាគ ការប្រែប្រួល និងប្រតិបត្តិការជាមួយភាគជាមួយនឹងឧទាហរណ៍ងាយស្រួល</p>
+            </div>
+        </section>
+        <section class="lessons-section">
+            <div class="section-header">
+                <h2 class="section-title">📚 អត្ថបទមេរៀន</h2>
+                <p class="section-subtitle">ស្វែងយល់គំនិតមូលដ្ឋាននៃភាគ</p>
+            </div>
             <h2>អត្ថបទមេរៀន</h2>
-            <p>
-                ភាគ គឺជាចំនួនដែលសរសេរជា <strong>លេខខាងលើ</strong> (ញែក) និង <strong>លេខខាងក្រោម</strong> (បែង)
-                ដោយមានខ្សែបន្ទាត់កណ្ដាល។ ឧទាហរណ៍៖ ១/២, ៣/៤, ៥/៨។
-            </p>
+            <div class="lesson-card">
+                <div class="lesson-icon">📊</div>
+                <div class="lesson-content">
+                    <h3>អត្ថបទមេរៀន</h3>
+                    <p>
+                        ភាគ គឺជាចំនួនដែលសរសេរជា <strong>លេខខាងលើ</strong> (ញែក) និង <strong>លេខខាងក្រោម</strong> (បែង)
+                        ដោយមានខ្សែបន្ទាត់កណ្ដាល។ ឧទាហរណ៍៖ ១/២, ៣/៤, ៥/៨។
+                    </p>
+                </div>
+            </div>
             <div class="form-row">
                 <div class="fraction-box"><div class="num">១</div><div class="den">២</div></div>
                 <div class="fraction-box"><div class="num">៣</div><div class="den">៤</div></div>
@@ -42,34 +57,59 @@
             </div>
         </section>
 
-        <section class="section-card">
-            <h2>ប្រែភាគ ➜ ភាគរយ</h2>
-            <ul>
-                <li>១/២ = ០.៥ = ៥០%</li>
-                <li>១/៤ = ០.២៥ = ២៥%</li>
-                <li>៣/៤ = ០.៧៥ = ៧៥%</li>
-            </ul>
+        <section class="lessons-section">
+            <div class="section-header">
+                <h2 class="section-title">🔄 ប្រែភាគ ➜ ភាគរយ</h2>
+                <p class="section-subtitle">រៀនពីវិធីប្តូរភាគទៅជាភាគរយ</p>
+            </div>
+            <div class="lesson-card">
+                <div class="lesson-icon">📈</div>
+                <div class="lesson-content">
+                    <h3>ឧទាហរណ៍ការប្តូរ</h3>
+                    <ul>
+                        <li>១/២ = ០.៥ = ៥០%</li>
+                        <li>១/៤ = ០.២៥ = ២៥%</li>
+                        <li>៣/៤ = ០.៧៥ = ៧៥%</li>
+                    </ul>
+                </div>
+            </div>
             <button class="btn answer-toggle">បង្ហាញចម្លើយ</button>
             <div class="answer">
                 គន្លឹះ៖ បែង (denominator) ៤ ឬ ២ អាចបម្លែងទៅទសភាគងាយស្រួល, ប្រែទៅ % ដោយគុណ ១០០%.
             </div>
         </section>
 
-        <section class="section-card">
-            <h2>បូកភាគ (បែងដូចគ្នា)</h2>
-            <p>បូក ១/៨ + ៣/៨ = (១ + ៣) / ៨ = ៤/៨ = ១/២</p>
+        <section class="lessons-section">
+            <div class="section-header">
+                <h2 class="section-title">➕ បូកភាគ (បែងដូចគ្នា)</h2>
+                <p class="section-subtitle">រៀនពីការបូកភាគដែលមានបែងដូចគ្នា</p>
+            </div>
+            <div class="lesson-card">
+                <div class="lesson-icon">🧮</div>
+                <div class="lesson-content">
+                    <h3>ឧទាហរណ៍ការបូក</h3>
+                    <p>បូក ១/៨ + ៣/៨ = (១ + ៣) / ៨ = ៤/៨ = ១/២</p>
+                </div>
+            </div>
             <button class="btn answer-toggle">បង្ហាញចម្លើយ</button>
             <div class="answer">ចម្លើយ៖ ១/២</div>
         </section>
 
-        <section class="section-card">
-            <h2>លំហាត់</h2>
-            <ul>
-                <li>កាត់អំពើ ៤/៨ ទៅទម្រង់សាមញ្ញ</li>
-                <li>បម្លែង ២/៥ ទៅភាគរយ</li>
-                <li>បូក ១/៤ + ១/២</li>
-            </ul>
-            <button class="btn answer-toggle">បង្ហាញចម្លើយ</button>
+        <section class="quiz-section">
+            <div class="quiz-header">
+                <h2>📝 លំហាត់</h2>
+                <p>សាកល្បងចំណេះដឹងរបស់អ្នក</p>
+            </div>
+            <div class="quiz-content">
+            <div class="quiz-card">
+                <h3>សំណួរ</h3>
+                <ul>
+                    <li>កាត់អំពើ ៤/៨ ទៅទម្រង់សាមញ្ញ</li>
+                    <li>បម្លែង ២/៥ ទៅភាគរយ</li>
+                    <li>បូក ១/៤ + ១/២</li>
+                </ul>
+            </div>
+            <button class="btn answer-toggle">🔍 បង្ហាញចម្លើយ</button>
             <div class="answer">
                 <ol>
                     <li>៤/៨ = ១/២</li>
@@ -80,8 +120,23 @@
         </section>
     </main>
     <footer>
-        <p>© 2025 មេរៀន ភាគ</p>
+        <div class="footer-content">
+            <p>© 2025 គណិតវិទ្យាខ្មែរ - មេរៀន ភាគ</p>
+        </div>
     </footer>
+    <script>
+    // Navbar toggle for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+        
+        if (navbarToggle && navbarMenu) {
+            navbarToggle.addEventListener('click', function() {
+                navbarMenu.classList.toggle('active');
+            });
+        }
+    });
+    </script>
     <script src="../js/app.js"></script>
 </body>
 </html>

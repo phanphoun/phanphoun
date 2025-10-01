@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>មេរៀន៖ ប្រតិបត្តិការគណិតវិទ្យា</title>
-    <link rel="stylesheet" href="../css/arithmetic.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -22,11 +22,11 @@
             </ul>
         </div>
     </nav>
-    <header>
-        <h1>មេរៀន៖ ប្រតិបត្តិការគណិតវិទ្យា</h1>
-        <nav>
-            <a href="../index.html">ទំព័រដើម</a>
-        </nav>
+    <header class="grade-hero">
+        <div class="header-content">
+            <h1>មេរៀន៖ ប្រតិបត្តិការគណិតវិទ្យា</h1>
+            <p>សូមស្វាគមន៍មកកាន់មេរៀនប្រតិបត្តិការគណិតវិទ្យា</p>
+        </div>
     </header>
     <main class="container">
         <section class="section-card section-highlight">
@@ -65,6 +65,19 @@
     <footer>
         <p>© 2025 មេរៀន ប្រតិបត្តិការគណិតវិទ្យា</p>
     </footer>
+    <script>
+    // Navbar toggle for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+        
+        if (navbarToggle && navbarMenu) {
+            navbarToggle.addEventListener('click', function() {
+                navbarMenu.classList.toggle('active');
+            });
+        }
+    });
+    </script>
     <script src="../js/app.js"></script>
 </body>
 </html>
