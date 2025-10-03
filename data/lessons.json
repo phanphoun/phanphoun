@@ -1,9 +1,0 @@
-[
-  {"title": "លេខ និងលេខទសភាគ", "href": "lesson/numbers.html", "tags": ["លេខ", "លេខគត់", "ទសភាគ", "Khmer", "Arabic"]},
-  {"title": "ប្រតិបត្តិការគណិតវិទ្យា", "href": "lesson/arithmetic.html", "tags": ["បូក", "ដក", "គុណ", "ចែក", "Arithmetic"]},
-  {"title": "សមីការ និងអសមីការ", "href": "lesson/equation.html", "tags": ["សមីការ", "អសមីការ", "x", ">", "<", "="]},
-  {"title": "ធរណីមាត្រ", "href": "lesson/geometry.html", "tags": ["ធរណីមាត្រ", "រាង", "ផ្ទៃក្រឡា", "បរិវេណ", "កូណា"]},
-  {"title": "ភាគ (Fractions)", "href": "lesson/fractions.html", "tags": ["ភាគ", "fraction", "ភាគរយ", "ញែក", "បែង"]},
-  {"title": "Chatbot", "href": "lesson/chatbot.html", "tags": ["ឧបករណ៍", "chatbot"]},
-  {"title": "Calculator", "href": "lesson/calculator.html", "tags": ["ឧបករណ៍", "គណនា"]}
-]
