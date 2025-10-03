@@ -1,262 +1,171 @@
-// ===== MAIN SCRIPT (Combined & Optimized) =====
-
-// DOM Elements
-const dom = {
-    hamburger: document.querySelector('.hamburger'),
-    navLinks: document.querySelector('.nav-links'),
-    header: document.querySelector('header'),
-    backToTop: document.querySelector('.back-to-top'),
-    statNumbers: document.querySelectorAll('.stat-number')
-};
-
-// Mobile Navigation
-function initMobileNav() {
-    if (!dom.hamburger || !dom.navLinks) return;
+// ===== MOBILE MENU =====
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Mobile menu initializing...');
     
-    const navLinksItems = document.querySelectorAll('.nav-links li');
+    // 1. Get elements
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const body = document.body;
     
-    // Toggle mobile menu
-    dom.hamburger.addEventListener('click', () => {
-        dom.hamburger.classList.toggle('active');
-        dom.navLinks.classList.toggle('active');
-    });
+    // 2. Create overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'nav-overlay';
+    document.body.appendChild(overlay);
     
-    // Close menu on nav link click
-    navLinksItems.forEach(link => {
-        link.addEventListener('click', () => {
-            dom.hamburger.classList.remove('active');
-            dom.navLinks.classList.remove('active');
-        });
-    });
-}
-
-// Sticky Header & Scroll Effects
-function initScrollEffects() {
-    if (!dom.header) return;
-    
-    let lastScroll = 0;
-    
-    const handleScroll = () => {
-        const currentScroll = window.pageYOffset;
+    // 3. Toggle menu function
+    function toggleMenu() {
+        console.log('Toggling menu');
+        const isOpening = !hamburger.classList.contains('active');
         
-        // Toggle scrolled class
-        dom.header.classList.toggle('scrolled', currentScroll > 100);
+        // Toggle active class on hamburger
+        hamburger.classList.toggle('active');
         
-        // Hide/show header on scroll
-        dom.header.style.transform = (currentScroll > lastScroll && currentScroll > 200) ? 
-            'translateY(-100%)' : 'translateY(0)';
-        
-        // Back to top button
-        if (dom.backToTop) {
-            dom.backToTop.classList.toggle('active', currentScroll > 300);
+        // Handle menu and overlay
+        if (isOpening) {
+            // Opening menu
+            nav.style.display = 'flex';
+            overlay.style.display = 'block';
+            
+            // Trigger reflow
+            void nav.offsetWidth;
+            
+            // Start animations
+            nav.classList.add('active');
+            overlay.classList.add('active');
+            body.classList.add('menu-open');
+            
+            // Animate menu items
+            document.querySelectorAll('.nav-links li').forEach((item, index) => {
+                item.style.transition = `opacity 0.3s ease ${index * 0.1}s, transform 0.3s ease ${index * 0.1}s`;
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+            });
+        } else {
+            // Closing menu
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
+            body.classList.remove('menu-open');
+            
+            // Reset menu items
+            document.querySelectorAll('.nav-links li').forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+            });
+            
+            // Hide after animation
+            setTimeout(() => {
+                if (!hamburger.classList.contains('active')) {
+                    nav.style.display = 'none';
+                    overlay.style.display = 'none';
+                }
+            }, 300);
         }
-        
-        lastScroll = currentScroll;
-    };
+    }
     
-    window.addEventListener('scroll', handleScroll, { passive: true });
-}
+    // 4. Close menu function
+    function closeMenu() {
+        if (hamburger.classList.contains('active')) {
+            toggleMenu();
+        }
+    }
+    
+    // 5. Initialize menu items
+    function initMenu() {
+        document.querySelectorAll('.nav-links li').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            item.style.transition = 'none';
+        });
+    }
+    
+    // 6. Event Listeners
+    if (hamburger) {
+        hamburger.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+        });
+    }
+    
+    // Close when clicking overlay
+    overlay.addEventListener('click', closeMenu);
+    
+    // Close when clicking nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+    
+    // Close with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && hamburger.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+    
+    // 7. Handle window resize
+    function handleResize() {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    }
+    
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(handleResize, 250);
+    });
+    
+    // 8. Initialize menu
+    initMenu();
+    
+    // Set initial display based on screen size
+    function setInitialMenuState() {
+        if (window.innerWidth <= 768) {
+            // Mobile: Hide menu by default
+            nav.style.display = 'none';
+            overlay.style.display = 'none';
+        } else {
+            // Desktop: Always show menu
+            nav.style.display = 'flex';
+            overlay.style.display = 'none';
+        }
+    }
+    
+    // Set initial state
+    setInitialMenuState();
+    
+    // Update on resize
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            handleResize();
+            setInitialMenuState(); // Update menu visibility on resize
+        }, 250);
+    });
+    
+    console.log('Mobile menu initialized');
+});
 
-// Stats Counter Animation
-function initStatsCounter() {
-    if (!dom.statNumbers.length) return;
+// Back to top button
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.querySelector('.back-to-top');
     
-    const isInViewport = (el) => {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    };
-    
-    const animateNumbers = () => {
-        dom.statNumbers.forEach(stat => {
-            if (!stat.classList.contains('animated') && isInViewport(stat)) {
-                const target = parseInt(stat.getAttribute('data-count'));
-                const duration = 2000;
-                const step = target / (duration / 16);
-                let current = 0;
-                
-                const updateNumber = () => {
-                    current += step;
-                    if (current < target) {
-                        stat.textContent = Math.ceil(current);
-                        requestAnimationFrame(updateNumber);
-                    } else {
-                        stat.textContent = target.toLocaleString();
-                        stat.classList.add('animate');
-                    }
-                };
-                
-                stat.classList.add('animated');
-                updateNumber();
+    if (backToTop) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
             }
         });
-    };
-    
-    // Run on load and scroll (debounced)
-    let timeout;
-    const handleScroll = () => {
-        clearTimeout(timeout);
-        timeout = setTimeout(animateNumbers, 100);
-    };
-    
-    animateNumbers();
-    window.addEventListener('scroll', handleScroll, { passive: true });
-}
-
-// Initialize everything when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    initMobileNav();
-    initScrollEffects();
-    initStatsCounter();
-});
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
         
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            const headerHeight = document.querySelector('header').offsetHeight;
-            const elementPosition = targetElement.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
-            
+        backToTop.addEventListener('click', function(e) {
+            e.preventDefault();
             window.scrollTo({
-                top: offsetPosition,
+                top: 0,
                 behavior: 'smooth'
             });
-        }
-    });
-});
-
-// Form submission handling
-const contactForm = document.getElementById('contact-form');
-const newsletterForm = document.getElementById('newsletter-form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form values
-        const name = this.querySelector('input[name="name"]').value;
-        const email = this.querySelector('input[name="email"]').value;
-        const message = this.querySelector('textarea[name="message"]').value;
-        
-        // Here you would typically send the form data to a server
-        console.log('Form submitted:', { name, email, message });
-        
-        // Show success message
-        alert('សាររបស់អ្នកត្រូវបានផ្ញើរួចរាល់ហើយ! យើងនឹងឆាក់ទំនាក់ទំនងអ្នកវិញឆាប់ៗនេះ។');
-        
-        // Reset form
-        this.reset();
-    });
-}
-
-if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const email = this.querySelector('input[type="email"]').value;
-        
-        // Here you would typically send the email to your newsletter service
-        console.log('Newsletter subscription:', email);
-        
-        // Show success message
-        alert('អរគុណសម្រាប់ការជាវព័ត៌មានរបស់យើង!');
-        
-        // Reset form
-        this.reset();
-    });
-}
-
-// Animation on scroll
-const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.grade-card, .feature-card, .about-content, .contact-content');
-    
-    elements.forEach(element => {
-        const elementPosition = element.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.3;
-        
-        if (elementPosition < screenPosition) {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
-        }
-    });
-};
-
-// Set initial styles for animation
-window.addEventListener('load', () => {
-    const elements = document.querySelectorAll('.grade-card, .feature-card, .about-content, .contact-content');
-    
-    elements.forEach((element, index) => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        element.style.transitionDelay = `${index * 0.1}s`;
-    });
-    
-    // Trigger animation on load
-    setTimeout(animateOnScroll, 300);
-});
-
-window.addEventListener('scroll', animateOnScroll);
-
-// Active navigation link highlighting
-const sections = document.querySelectorAll('section');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    navLinksItems.forEach(item => {
-        item.querySelector('a').classList.remove('active');
-        if (item.querySelector('a').getAttribute('href') === `#${current}`) {
-            item.querySelector('a').classList.add('active');
-        }
-    });
-});
-
-// Lazy loading images
-const lazyImages = document.querySelectorAll('img[data-src]');
-
-const imageObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const img = entry.target;
-            img.src = img.dataset.src;
-            img.removeAttribute('data-src');
-            observer.unobserve(img);
-        }
-    });
-});
-
-lazyImages.forEach(img => {
-    imageObserver.observe(img);
-});
-
-// Add loading="lazy" to all images
-document.querySelectorAll('img').forEach(img => {
-    if (!img.loading) {
-        img.loading = 'lazy';
+        });
     }
 });
-
-// Add no-js class to HTML if JavaScript is disabled
-document.documentElement.classList.remove('no-js');
-document.documentElement.classList.add('js');

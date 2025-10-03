@@ -1,108 +1,153 @@
 <!DOCTYPE html>
+<!-- 
+    Math Learning Platform - Main Page
+    Language: Khmer (km)
+    Author: Your Name
+    Last Updated: October 2025
+-->
 <html lang="km">
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="រៀនគណិតវិទ្យាតាមអ៊ីនធឺណិតសម្រាប់សិស្សថ្នាក់ទី៧ ដល់ថ្នាក់ទី១២">
+    
+    <!-- Page Title -->
     <title>គណិតវិទ្យា - មជ្ឈមណ្ឌលរៀនគណិតវិទ្យា</title>
+    
+    <!-- External CSS and Fonts -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts - Kantumruy Pro for Khmer text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Header Section -->
+    <!-- ==================== HEADER SECTION ==================== -->
+    <!-- Contains the main navigation and logo -->
     <header>
         <nav>
+            <!-- Logo and Branding -->
             <div class="logo">
-                <i class="fas fa-square-root-alt"></i>
+                <i class="fas fa-square-root-alt" aria-hidden="true"></i>
                 <span>គណិតវិទ្យា</span>
             </div>
+            
+            <!-- Main Navigation Links -->
             <ul class="nav-links">
-                <li><a href="#home">ទំព័រដើម</a></li>
+                <li><a href="#home" class="active">ទំព័រដើម</a></li>
                 <li><a href="#grades">ថ្នាក់រៀន</a></li>
                 <li><a href="#about">អំពីយើង</a></li>
                 <li><a href="#contact">ទំនាក់ទំនង</a></li>
             </ul>
-            <div class="hamburger">
+            
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
-            </div>
+            </button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ==================== HERO SECTION ==================== -->
+    <!-- Main banner section with call-to-action -->
     <section id="home" class="hero">
+        <!-- Math Icons for Animation -->
+        <div class="math-icon"><i class="fas fa-square-root-alt"></i></div>
+        <div class="math-icon"><i class="fas fa-calculator"></i></div>
+        <div class="math-icon"><i class="fas fa-infinity"></i></div>
+        <div class="math-icon"><i class="fas fa-equals"></i></div>
+        <div class="math-icon"><i class="fas fa-percentage"></i></div>
+        <div class="math-icon"><i class="fas fa-less-than-equal"></i></div>
+        <div class="math-icon"><i class="fas fa-greater-than-equal"></i></div>
+        <div class="math-icon"><i class="fas fa-divide"></i></div>
+        
+        <!-- Hero content container -->
         <div class="hero-content">
+            <!-- Main heading -->
             <h1>រៀនគណិតវិទ្យាយ៉ាងស្រួល</h1>
+            
+            <!-- Hero description -->
             <p>ជួយអ្នកយល់ដឹងអំពីគណិតវិទ្យាតាមរយៈមេរៀនដែលអាចយល់បានយ៉ាងងាយ</p>
+            
+            <!-- Call-to-action button -->
             <a href="#grades" class="btn btn-primary">ចាប់ផ្តើមរៀន</a>
         </div>
     </section>
 
-    <!-- Grades Section -->
+    <!-- ==================== GRADES SECTION ==================== -->
+    <!-- Displays available grade levels with links to respective pages -->
     <section id="grades" class="section-padding">
+        <!-- Container for consistent width and padding -->
         <div class="container">
+            <!-- Section header with title and subtitle -->
             <div class="section-header">
                 <h2>ជ្រើសរើសថ្នាក់រៀន</h2>
                 <p>រៀនគណិតវិទ្យាតាមថ្នាក់រៀនរបស់អ្នក</p>
             </div>
             
+            <!-- Grid container for grade cards -->
             <div class="grade-cards">
-                <!-- Grade 7 -->
+                <!-- Grade 7 Card -->
                 <div class="grade-card">
-                    <a href="grades/grade7.html">
-                        <i class="fas fa-calculator"></i>
+                    <a href="grades/grade7.html" aria-label="Grade 7 - Basic Mathematics">
+                        <i class="fas fa-calculator" aria-hidden="true"></i>
                         <h3>ថ្នាក់ទី ៧</h3>
                         <p>ចំណេះគណិតវិទ្យាមូលដ្ឋាន</p>
                         <span class="btn btn-outline">ចាប់ផ្តើមរៀន</span>
                     </a>
                 </div>
                 
-                <!-- Grade 8 -->
+                <!-- Grade 8 Card -->
                 <div class="grade-card">
-                    <a href="grades/grade8.html">
-                        <i class="fas fa-shapes"></i>
+                    <a href="grades/grade8.html" aria-label="Grade 8 - Algebra and Basic Geometry">
+                        <i class="fas fa-shapes" aria-hidden="true"></i>
                         <h3>ថ្នាក់ទី ៨</h3>
                         <p>អាល់ហ្សេប្រា និងធរណីមាត្រមូលដ្ឋាន</p>
                         <span class="btn btn-outline">ចាប់ផ្តើមរៀន</span>
                     </a>
                 </div>
                 
-                <!-- Grade 9 -->
+                <!-- Grade 9 Card -->
                 <div class="grade-card">
-                    <a href="grades/grade9.html">
-                        <i class="fas fa-square-root-alt"></i>
+                    <a href="grades/grade9.html" aria-label="Grade 9 - Equations and Functions">
+                        <i class="fas fa-square-root-alt" aria-hidden="true"></i>
                         <h3>ថ្នាក់ទី ៩</h3>
                         <p>សមីការ និងអនុគមន៍</p>
                         <span class="btn btn-outline">ចាប់ផ្តើមរៀន</span>
                     </a>
                 </div>
                 
-                <!-- Grade 10 -->
+                <!-- Grade 10 Card - Functions and Geometry -->
                 <div class="grade-card">
-                    <a href="grades/grade10.html">
-                        <i class="fas fa-calculator"></i>
+                    <a href="grades/grade10.html" aria-label="Grade 10 - Functions and Geometry">
+                        <i class="fas fa-calculator" aria-hidden="true"></i>
                         <h3>ថ្នាក់ទី ១០</h3>
                         <p>អនុគមន៍ និងធរណីមាត្រ</p>
                         <span class="btn btn-outline">ចាប់ផ្តើមរៀន</span>
                     </a>
                 </div>
                 
-                <!-- Grade 11 -->
+                <!-- Grade 11 Card - Advanced Mathematics -->
                 <div class="grade-card">
-                    <a href="grades/grade11.html">
-                        <i class="fas fa-infinity"></i>
+                    <a href="grades/grade11.html" aria-label="Grade 11 - Advanced Mathematics">
+                        <i class="fas fa-infinity" aria-hidden="true"></i>
                         <h3>ថ្នាក់ទី ១១</h3>
                         <p>គណិតវិទ្យាកម្រិតខ្ពស់</p>
                         <span class="btn btn-outline">ចាប់ផ្តើមរៀន</span>
                     </a>
                 </div>
                 
-                <!-- Grade 12 -->
+                <!-- Grade 12 Card - Baccalaureate Preparation -->
                 <div class="grade-card">
-                    <a href="grades/grade12.html">
-                        <i class="fas fa-graduation-cap"></i>
+                    <a href="grades/grade12.html" aria-label="Grade 12 - Baccalaureate Preparation">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                         <h3>ថ្នាក់ទី ១២</h3>
                         <p>ត្រៀមប្រឡងបាក់ឌុប</p>
                         <span class="btn btn-outline">ចាប់ផ្តើមរៀន</span>
@@ -112,35 +157,42 @@
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- ==================== FEATURES SECTION ==================== -->
+    <!-- Highlights the key benefits and features of the learning platform -->
     <section id="features" class="section-padding bg-light">
         <div class="container">
-            <div class="section-header">
+            <!-- Section header with title and description -->
+            <div class="section-header" data-aos="fade-up">
                 <h2>ហេតុអ្វីគួរជ្រើសរើសយើង?</h2>
                 <p>យើងផ្តល់នូវវគ្គសិក្សាគណិតវិទ្យាដែលមានគុណភាពខ្ពស់សម្រាប់សិស្សខ្មែរ</p>
             </div>
 
+            <!-- Features grid container -->
             <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-graduation-cap"></i>
+                <!-- Expert Teachers Feature -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                     <h3>គ្រូជំនាញ</h3>
                     <p>រៀនជាមួយគ្រូដែលមានបទពិសោធន៍ និងយល់ដឹងពីបញ្ហារបស់សិស្សខ្មែរ</p>
                 </div>
 
-                <div class="feature-card">
-                    <i class="fas fa-book-open"></i>
+                <!-- Comprehensive Lessons Feature -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-book-open" aria-hidden="true"></i>
                     <h3>មេរៀនសម្រាប់គ្រប់ថ្នាក់</h3>
                     <p>មានមេរៀនពេញលេញសម្រាប់ថ្នាក់ទី៧ ដល់ ថ្នាក់ទី១២</p>
                 </div>
 
-                <div class="feature-card">
-                    <i class="fas fa-laptop-code"></i>
+                <!-- Online Learning Feature -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-laptop-code" aria-hidden="true"></i>
                     <h3>រៀនអនឡាញ</h3>
                     <p>អាចរៀនបានគ្រប់ពេលវេលា និងគ្រប់ទីកន្លែង</p>
                 </div>
 
-                <div class="feature-card">
-                    <i class="fas fa-question-circle"></i>
+                <!-- Q&A Support Feature -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-question-circle" aria-hidden="true"></i>
                     <h3>ដោះស្រាយសំណួរ</h3>
                     <p>មានផ្នែកសំរាប់សួរសំណួរ និងដោះស្រាយបញ្ហាជាមួយអ្នកជំនាញ</p>
                 </div>
@@ -148,27 +200,31 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <!-- Provides information about the organization, mission, and team -->
     <section id="about" class="section-padding">
         <div class="container">
-            <div class="section-header">
+            <!-- Section header with title and subtitle -->
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">អំពីយើង</h2>
                 <p class="section-subtitle">ស្វាគមន៍មកកាន់មជ្ឈមណ្ឌលរៀនគណិតវិទ្យានៃយើងខ្ញុំ</p>
                 <div class="divider"></div>
             </div>
             
-            <!-- Mission & Vision -->
+            <!-- Mission & Vision Grid -->
             <div class="about-grid">
-                <div class="about-card mission-card">
-                    <div class="card-icon">
+                <!-- Mission Card -->
+                <div class="about-card mission-card" data-aos="fade-right">
+                    <div class="card-icon" aria-hidden="true">
                         <i class="fas fa-bullseye"></i>
                     </div>
                     <h3>បេសកកម្មរបស់យើង</h3>
                     <p>ការធ្វើឱ្យការរៀនគណិតវិទ្យាក្លាយជាបទពិសោធន៍ដ៏រីករាយ ងាយស្រួលយល់ និងមានប្រសិទ្ធភាពសម្រាប់សិស្សគ្រប់ថ្នាក់។ យើងជឿថាគណិតវិទ្យាគឺជាភាសាសកលដែលអាចបើកទ្វារទៅកាន់ឱកាសជាច្រើន។</p>
                 </div>
                 
-                <div class="about-card vision-card">
-                    <div class="card-icon">
+                <!-- Vision Card -->
+                <div class="about-card vision-card" data-aos="fade-left">
+                    <div class="card-icon" aria-hidden="true">
                         <i class="fas fa-eye"></i>
                     </div>
                     <h3>វិស័យយើង</h3>
@@ -176,27 +232,35 @@
                 </div>
             </div>
 
-            <!-- Core Values -->
-            <div class="values-container">
+            <!-- Core Values Section -->
+            <div class="values-container" data-aos="fade-up">
                 <h3 class="values-title">តម្លៃចម្បងរបស់យើង</h3>
+                <!-- Grid layout for core values -->
                 <div class="values-grid">
-                    <div class="value-item">
-                        <i class="fas fa-graduation-cap"></i>
+                    <!-- Quality Value -->
+                    <div class="value-item" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                         <h4>គុណភាពខ្ពស់</h4>
                         <p>យើងផ្តល់គុណភាពខ្ពស់បំផុតក្នុងការបណ្តុះបណ្តាល</p>
                     </div>
-                    <div class="value-item">
-                        <i class="fas fa-users"></i>
+                    
+                    <!-- Student-Centric Value -->
+                    <div class="value-item" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-users" aria-hidden="true"></i>
                         <h4>ផ្តោតលើសិស្ស</h4>
                         <p>សិស្សគឺជាចំណុចកណ្តាលនៃការបណ្តុះបណ្តាលរបស់យើង</p>
                     </div>
-                    <div class="value-item">
-                        <i class="fas fa-lightbulb"></i>
+                    
+                    <!-- Innovation Value -->
+                    <div class="value-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
                         <h4>ការច្នៃប្រឌិត</h4>
                         <p>យើងអនុវត្តវិធីសិក្សាថ្មីៗជានិច្ច</p>
                     </div>
-                    <div class="value-item">
-                        <i class="fas fa-hands-helping"></i>
+                    
+                    <!-- Support Value -->
+                    <div class="value-item" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-hands-helping" aria-hidden="true"></i>
                         <h4>ការគាំទ្រ</h4>
                         <p>យើងផ្តល់ការគាំទ្រពេញម៉ោងដល់សិស្ស</p>
                     </div>
@@ -211,7 +275,7 @@
                 <div class="team-grid">
                     <div class="team-member">
                         <div class="member-image">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="គ្រូបង្រៀន">
+                            <img src="/Images/Teacher math.jpg" alt="គ្រូបង្រៀន">
                             <div class="member-social">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -219,14 +283,14 @@
                             </div>
                         </div>
                         <div class="member-info">
-                            <h4>លោក សុខ សំណាង</h4>
+                            <h4>លោក សាល​ លី</h4>
                             <p>អ្នកគ្រប់គ្រងវគ្គសិក្សា</p>
                         </div>
                     </div>
                     
                     <div class="team-member">
                         <div class="member-image">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="គ្រូបង្រៀន">
+                            <img src="/Images/Teacher Math grade 9.jpg" alt="គ្រូបង្រៀន">
                             <div class="member-social">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -234,14 +298,14 @@
                             </div>
                         </div>
                         <div class="member-info">
-                            <h4>អ្នកស្រី ម៉ៅ សុធារី</h4>
+                            <h4>អ្នកស្រី ស៊ឹង​ វិច្ចិការ</h4>
                             <p>គ្រូបង្រៀនគណិតវិទ្យា</p>
                         </div>
                     </div>
                     
                     <div class="team-member">
                         <div class="member-image">
-                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="គ្រូបង្រៀន">
+                            <img src="/Images/Teacher Math grade 12.jpg" alt="គ្រូបង្រៀន">
                             <div class="member-social">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -249,7 +313,7 @@
                             </div>
                         </div>
                         <div class="member-info">
-                            <h4>លោក គឹម សុភាព</h4>
+                            <h4>លោក នី​ សីហា</h4>
                             <p>អ្នកអភិវឌ្ឍកម្មវិធីសិក្សា</p>
                         </div>
                     </div>
@@ -269,24 +333,30 @@
 
     <!-- Contact Section -->
     <section id="contact" class="section-padding contact-section">
+        <!-- Main container for the contact section -->
         <div class="container">
-            <div class="section-header">
+            <!-- Section header with title and subtitle -->
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">ទំនាក់ទំនងយើងខ្ញុំ</h2>
                 <p class="section-subtitle">មានសំណួរ? សូមទំនាក់ទំនងមកយើងខ្ញុំ</p>
                 <div class="divider"></div>
             </div>
 
+            <!-- Contact content wrapper -->
             <div class="contact-wrapper">
-                <!-- Contact Info Card -->
-                <div class="contact-info-card">
+                <!-- Contact Information Card -->
+                <div class="contact-info-card" data-aos="fade-right">
+                    <!-- Card header with title and description -->
                     <div class="contact-info-header">
                         <h3>ព័ត៌មានទំនាក់ទំនង</h3>
                         <p>សូមមានចិត្តស្នេហាករណីអ្នកមានសំណួរ ឬត្រូវការជំនួយ។ យើងខ្ញុំនឹងឆ្លើយតបអ្នកយ៉ាងរហ័ស។</p>
                     </div>
                     
+                    <!-- Contact methods list -->
                     <div class="contact-methods">
+                        <!-- Address Information -->
                         <div class="contact-method">
-                            <div class="contact-icon">
+                            <div class="contact-icon" aria-hidden="true">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact-details">
@@ -295,8 +365,9 @@
                             </div>
                         </div>
 
+                        <!-- Phone Information -->
                         <div class="contact-method">
-                            <div class="contact-icon">
+                            <div class="contact-icon" aria-hidden="true">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
                             <div class="contact-details">
