@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Mobile menu initialized');
 });
 
-// Back to top button
+// ===== BACK TO TOP BUTTON =====
 document.addEventListener('DOMContentLoaded', function() {
     const backToTop = document.querySelector('.back-to-top');
     
@@ -168,4 +168,107 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+});
+
+// ===== HEADER SCROLL EFFECT =====
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+    
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+});
+
+// ===== SMOOTH SCROLLING FOR NAVIGATION =====
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = target.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+// ===== ACTIVE NAVIGATION HIGHLIGHT =====
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    
+    function updateActiveNavLink() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', updateActiveNavLink);
+    updateActiveNavLink(); // Initial call
+});
+
+// ===== ENHANCED ANIMATIONS =====
+document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer for animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-in');
+            }
+        });
+    }, observerOptions);
+    
+    // Observe elements for animation
+    document.querySelectorAll('.feature-card, .grade-card, .about-card, .value-item, .team-member, .contact-method').forEach(el => {
+        observer.observe(el);
+    });
+});
+
+// ===== MATH ICONS INTERACTION =====
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.math-icon').forEach(icon => {
+        // Add random delay for floating animation
+        const delay = Math.random() * 2;
+        icon.style.animationDelay = delay + 's';
+        
+        icon.addEventListener('mouseenter', function() {
+            this.style.animationPlayState = 'paused';
+            this.style.transform = 'scale(1.3) rotate(15deg)';
+            this.style.filter = 'drop-shadow(0 0 20px currentColor)';
+            this.style.zIndex = '10';
+        });
+        
+        icon.addEventListener('mouseleave', function() {
+            this.style.animationPlayState = 'running';
+            this.style.transform = '';
+            this.style.filter = '';
+            this.style.zIndex = '';
+        });
+    });
 });
