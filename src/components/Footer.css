@@ -1,0 +1,239 @@
+/* Base styles */
+.footer {
+    position: relative;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e6e6e6;
+    padding: 4rem 0 2rem;
+    margin-top: 4rem;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Wave styling */
+.footer-wave {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.footer-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.footer-wave .wave-path {
+    fill: #0f172a;
+    opacity: 0.3;
+}
+
+/* Container layout */
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+/* Brand styling */
+.footer-brand {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.brand-accent {
+    color: #4f46e5;
+}
+
+.logo-text {
+    background: linear-gradient(90deg, #4f46e5, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Copyright text */
+.footer-copyright {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+}
+
+/* Social links */
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: #e2e8f0;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.footer-link:hover::before {
+    opacity: 1;
+}
+
+.footer-link i {
+    position: relative;
+    z-index: 1;
+}
+
+.link-text {
+    position: absolute;
+    opacity: 0;
+    font-size: 0.8rem;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.footer-link:hover .link-text {
+    opacity: 1;
+    transform: translateY(25px);
+}
+
+/* CTA Button */
+.footer-cta {
+    margin-top: 1rem;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.8rem;
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #4338ca, #6d28d9);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(79, 70, 229, 0.3);
+}
+
+.cta-button:hover::before {
+    opacity: 1;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow {
+    transform: translateX(4px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 0 2rem;
+    }
+    
+    .footer-brand {
+        font-size: 1.5rem;
+    }
+    
+    .footer-links {
+        gap: 1rem;
+    }
+    
+    .footer-link {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+    }
+    
+    .cta-button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Animation for social icons */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.footer-link:nth-child(1):hover { animation: float 2s ease-in-out infinite; }
+.footer-link:nth-child(2):hover { animation: float 2s ease-in-out 0.2s infinite; }
+.footer-link:nth-child(3):hover { animation: float 2s ease-in-out 0.4s infinite; }

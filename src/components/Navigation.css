@@ -1,0 +1,80 @@
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, rgba(10, 14, 39, 0.98), rgba(26, 31, 58, 0.98)) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    padding: 0.75rem 0;
+
+
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0 6rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+
+.brand-accent {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-secondary) !important;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--accent-color) !important;
+    background-color: transparent !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 0.5rem 0;
+    }
+
+    .navbar-nav .nav-link::after {
+        display: none;
+    }
+}
