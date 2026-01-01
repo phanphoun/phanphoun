@@ -1,73 +1,121 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 👨‍💻 Web Developer Portfolio
 
-Currently, two official plugins are available:
+## About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Passionate web developer with a keen eye for design and a commitment to creating exceptional digital experiences. I specialize in building modern, responsive web applications that combine functionality with aesthetics.
 
-## React Compiler
+### 🎯 What I Do
+- **Frontend Development**: Creating beautiful, responsive user interfaces
+- **Backend Development**: Building robust server-side applications
+- **Full-Stack Solutions**: End-to-end web application development
+- **UI/UX Design**: Crafting intuitive and engaging user experiences
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛠️ Technical Skills
 
-## Expanding the ESLint configuration
+#### Frontend Technologies
+- **HTML5** & **CSS3** - Semantic markup and modern styling
+- **JavaScript (ES6+)** - Modern JavaScript development
+- **Bootstrap** & **Tailwind CSS** - Responsive design frameworks
+- **React** - Component-based UI development
+- **Vue.js** - Progressive JavaScript framework
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+#### Backend Technologies
+- **Node.js** - JavaScript runtime for server-side development
+- **Express.js** - Web application framework
+- **MongoDB** - NoSQL database
+- **MySQL** - Relational database management
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+#### Tools & Technologies
+- **Git** & **GitHub** - Version control
+- **VS Code** - Code editor
+- **Figma** - UI/UX design
+- **Docker** - Containerization
+- **RESTful APIs** - API development
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 📊 GitHub Stats
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Seyha-Ny&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Seyha-Ny&layout=compact&theme=radical)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🚀 Featured Projects
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+#### **A5-Ecommerce_Wachify**
+A modern e-commerce platform built with HTML, CSS, and JavaScript.
+- **Tech Stack**: HTML5, CSS3, JavaScript, Bootstrap
+- **Features**: User authentication, product catalog, shopping cart
+- **Live Demo**: [View Project](https://github.com/Seyha-Ny/A5-Ecommerce_Wachify)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+#### **[Project Name]**
+[Project description]
+- **Tech Stack**: [Technologies used]
+- **Features**: [Key features]
+- **Live Demo**: [Link to project]
+
+### 📈 Current Focus
+
+- 🌐 Learning advanced React patterns and state management
+- 🔧 Exploring TypeScript for type-safe development
+- 📱 Mastering mobile-first responsive design
+- 🚀 Diving into cloud deployment strategies
+
+### 🎓 Learning Journey
+
+I'm constantly expanding my knowledge and skills through:
+- Online courses and tutorials
+- Open-source contributions
+- Personal projects and experiments
+- Community engagement and collaboration
+
+### 🤝 Let's Connect
+
+I'm always open to discussing new opportunities, creative ideas, or potential collaborations. Feel free to reach out!
+
+- **Portfolio**: [Your Portfolio Link]
+- **Email**: [your.email@example.com]
+- **LinkedIn**: [Your LinkedIn Profile]
+- **Twitter**: [@yourhandle]
+
+### 📝 Blog & Writing
+
+I occasionally write about web development, tutorials, and my learning experiences. Check out my articles on:
+- [Medium Profile]
+- [Dev.to Profile]
+- [Personal Blog]
+
+### 🎯 2024 Goals
+
+- [ ] Contribute to 10+ open-source projects
+- [ ] Launch 3+ personal projects
+- [ ] Master advanced React concepts
+- [ ] Learn cloud deployment (AWS/Azure)
+- [ ] Build a strong technical blog
+
+---
+
+### 💡 Fun Facts
+
+- 🌟 I love turning complex problems into simple, beautiful solutions
+- ☕ Powered by coffee and curiosity
+- 🎮 When not coding, you'll find me gaming or exploring new tech
+- 📚 Always reading about the latest web development trends
+
+---
+
+### 📊 Activity Graph
+
+![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=Seyha-Ny&theme=react-dark)
+
+---
+
+## 🤝 Support My Work
+
+If you find my projects helpful or inspiring, consider giving them a ⭐ on GitHub!
+
+---
+
+*"The best way to predict the future is to invent it." - Alan Kay*
+
+---
+
+*Last updated: January 2026*
