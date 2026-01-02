@@ -35,7 +35,7 @@ Passionate web developer with a keen eye for design and a commitment to creating
 
 ### 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Seyha-Ny&show_icons=true&theme=radical)
+![GitHub Stats](https://github.com/phanphoun)   
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Seyha-Ny&layout=compact&theme=radical)
 
 ### 🚀 Featured Projects
