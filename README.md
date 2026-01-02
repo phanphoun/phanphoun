@@ -71,10 +71,10 @@ I'm constantly expanding my knowledge and skills through:
 
 I'm always open to discussing new opportunities, creative ideas, or potential collaborations. Feel free to reach out!
 
-- **Portfolio**: [Your Portfolio Link]
-- **Email**: [your.email@example.com]
-- **LinkedIn**: [Your LinkedIn Profile]
-- **Twitter**: [@yourhandle]
+- **Portfolio**: [https://portfolio-afavapc9o-phanphounpncstudents.vercel.app/]
+- **Email**: [phanphoun855@gmail.com]
+- **LinkedIn**: [linkedin.com/in/phan-phoun-73baa2352]
+- **Facebook**: [https://www.facebook.com/Jemokasakh]
 
 ### 📝 Blog & Writing
 
