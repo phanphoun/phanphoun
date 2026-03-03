@@ -1,121 +1,109 @@
+# 👋 Hi, I'm Phan Phoun  
+### 💻 Full-Stack Web Developer
 
-# 👨‍💻 Web Developer 
+Passionate Full-Stack Web Developer focused on building modern, responsive, and scalable web applications. I enjoy solving real-world problems using clean code and intuitive design.
 
-## About Me
+---
 
-Passionate web developer with a keen eye for design and a commitment to creating exceptional digital experiences. I specialize in building modern, responsive web applications that combine functionality with aesthetics.
+## 🚀 About Me
 
-### 🎯 What I Do
-- **Frontend Development**: Creating beautiful, responsive user interfaces
-- **Backend Development**: Building robust server-side applications
-- **Full-Stack Solutions**: End-to-end web application development
-- **UI/UX Design**: Crafting intuitive and engaging user experiences
+- 🌐 I build responsive and user-friendly web applications  
+- ⚙️ I develop secure and scalable backend systems  
+- 🎯 I focus on clean architecture and maintainable code  
+- 📚 I continuously learn and improve my technical skills  
 
-### 🛠️ Technical Skills
+---
 
-#### Frontend Technologies
-- **HTML5** & **CSS3** - Semantic markup and modern styling
-- **JavaScript (ES6+)** - Modern JavaScript development
-- **Bootstrap** & **Tailwind CSS** - Responsive design frameworks
-- **React** - Component-based UI development
-- **Vue.js** - Progressive JavaScript framework
+## 🛠️ Tech Stack
 
-#### Backend Technologies
-- **Node.js** - JavaScript runtime for server-side development
-- **Express.js** - Web application framework
-- **MongoDB** - NoSQL database
-- **MySQL** - Relational database management
+### 🎨 Frontend
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Bootstrap
+- Tailwind CSS
+- React.js
+- Vue.js
 
-#### Tools & Technologies
-- **Git** & **GitHub** - Version control
-- **VS Code** - Code editor
-- **Figma** - UI/UX design
-- **Docker** - Containerization
-- **RESTful APIs** - API development
+### ⚙️ Backend
+- Node.js
+- Express.js
+- MongoDB
+- MySQL
 
-### 📊 GitHub Stats
+### 🔧 Tools & Technologies
+- Git & GitHub
+- VS Code
+- Figma
+- Docker
+- RESTful APIs
 
-![GitHub Stats](https://github.com/phanphoun)   
+---
+
+## 📊 GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Seyha-Ny&show_icons=true&theme=radical)
+
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Seyha-Ny&layout=compact&theme=radical)
 
-### 🚀 Featured Projects
+---
 
-#### **A5-Ecommerce_Wachify**
-A modern e-commerce platform built with HTML, CSS, and JavaScript.
-- **Tech Stack**: HTML5, CSS3, JavaScript, Bootstrap
-- **Features**: User authentication, product catalog, shopping cart
-- **Live Demo**: [View Project](https://github.com/Seyha-Ny/A5-Ecommerce_Wachify)
+## 🚀 Featured Projects
 
-#### **[Project Name]**
-[Project description]
-- **Tech Stack**: [Technologies used]
-- **Features**: [Key features]
-- **Live Demo**: [Link to project]
+### 🛍️ A5-Ecommerce_Wachify
+Modern e-commerce platform built with HTML, CSS, and JavaScript.
 
-### 📈 Current Focus
+**Tech Stack:** HTML5, CSS3, JavaScript, Bootstrap  
+**Features:**
+- User authentication
+- Product catalog
+- Shopping cart system
 
-- 🌐 Learning advanced React patterns and state management
-- 🔧 Exploring TypeScript for type-safe development
-- 📱 Mastering mobile-first responsive design
-- 🚀 Diving into cloud deployment strategies
-
-### 🎓 Learning Journey
-
-I'm constantly expanding my knowledge and skills through:
-- Online courses and tutorials
-- Open-source contributions
-- Personal projects and experiments
-- Community engagement and collaboration
-
-### 🤝 Let's Connect
-
-I'm always open to discussing new opportunities, creative ideas, or potential collaborations. Feel free to reach out!
-
-- **Portfolio**: [https://portfolio-afavapc9o-phanphounpncstudents.vercel.app/]
-- **Email**: [phanphoun855@gmail.com]
-- **LinkedIn**: [linkedin.com/in/phan-phoun-73baa2352]
-- **Facebook**: [https://www.facebook.com/Jemokasakh]
-
-### 📝 Blog & Writing
-
-I occasionally write about web development, tutorials, and my learning experiences. Check out my articles on:
-- [Medium Profile]
-- [Dev.to Profile]
-- [Personal Blog]
-
-### 🎯 2024 Goals
-
-- [ ] Contribute to 10+ open-source projects
-- [ ] Launch 3+ personal projects
-- [ ] Master advanced React concepts
-- [ ] Learn cloud deployment (AWS/Azure)
-- [ ] Build a strong technical blog
+🔗 GitHub: https://github.com/Seyha-Ny/A5-Ecommerce_Wachify
 
 ---
 
-### 💡 Fun Facts
+### 🌐 Portfolio Website
+Personal portfolio showcasing my projects and skills.
 
-- 🌟 I love turning complex problems into simple, beautiful solutions
-- ☕ Powered by coffee and curiosity
-- 🎮 When not coding, you'll find me gaming or exploring new tech
-- 📚 Always reading about the latest web development trends
-
----
-
-### 📊 Activity Graph
-
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=Seyha-Ny&theme=react-dark)
+🔗 Live Demo:  
+https://portfolio-afavapc9o-phanphounpncstudents.vercel.app/
 
 ---
 
-## 🤝 Support My Work
+## 📈 Currently Learning
 
-If you find my projects helpful or inspiring, consider giving them a ⭐ on GitHub!
+- Advanced React patterns
+- TypeScript for type-safe development
+- State management solutions
+- Cloud deployment (AWS / Azure)
+- Scalable application architecture
 
 ---
 
-*"The best way to predict the future is to invent it." - Alan Kay*
+## 🎯 2026 Goals
+
+- Contribute to 10+ open-source projects  
+- Build 3+ production-ready applications  
+- Master advanced React and TypeScript  
+- Deploy applications using cloud services  
+- Grow a technical blog  
 
 ---
 
-*Last updated: January 2026*
+## 🤝 Connect With Me
+
+📧 Email: phanphoun855@gmail.com  
+💼 LinkedIn: https://linkedin.com/in/phan-phoun-73baa2352  
+📘 Facebook: https://www.facebook.com/Jemokasakh  
+🌐 Portfolio: https://portfolio-afavapc9o-phanphounpncstudents.vercel.app/
+
+---
+
+## 💡 Philosophy
+
+> “The best way to predict the future is to invent it.” – Alan Kay
+
+---
+
+⭐ If you like my work, consider giving my repositories a star!
