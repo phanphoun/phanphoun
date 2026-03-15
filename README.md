@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Phan Phoun  
 ### 💻 Full-Stack Web Developer
 
-Passionate Full-Stack Web Developer focused on building modern, responsive, and scalable web applications. I enjoy solving real-world problems using clean code and intuitive design.
+Highly motivated and detail-oriented Software Developer with strong experience in web development, backend systems, and AI tools. Skilled in building scalable applications using modern technologies and solving real-world problems with technology. Known for strong analytical thinking, problem-solving abilities, and continuous learning to stay updated with modern development trends.
 
 ---
 
