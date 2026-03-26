@@ -1,4 +1,4 @@
-# 👋 I'M PHOUN
+# 👋 Hi, I'm Phoun
 ### 💻 Full-Stack & AI Engineer
 
 Software Engineer with expertise in full-stack development, backend systems, and AI-powered applications. Skilled in building scalable, intelligent systems that solve real-world problems. Passionate about machine learning, system design, and leveraging cutting-edge technologies to drive innovation.
