@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Phan Phoun  
-### 💻 Full-Stack Web Developer
+### 💻 Full-Stack & AI Engineer
 
-Highly motivated and detail-oriented Software Developer with strong experience in web development, backend systems, and AI tools. Skilled in building scalable applications using modern technologies and solving real-world problems with technology. Known for strong analytical thinking, problem-solving abilities, and continuous learning to stay updated with modern development trends.
+Software Engineer with expertise in full-stack development, backend systems, and AI-powered applications. Skilled in building scalable, intelligent systems that solve real-world problems. Passionate about machine learning, system design, and leveraging cutting-edge technologies to drive innovation.
 
 ---
 
