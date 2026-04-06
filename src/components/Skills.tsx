@@ -1,71 +1,40 @@
-import './Skills.css'
-
-interface Skill {
-    name: string
-    icon: string
-    category: string
-}
-
 export default function Skills() {
-    const skills: Skill[] = [
-        // Frontend
-        { name: 'React', icon: '⚛️', category: 'Frontend' },
-        { name: 'TypeScript', icon: '📘', category: 'Frontend' },
-        { name: 'JavaScript', icon: '✨', category: 'Frontend' },
-        { name: 'HTML/CSS', icon: '🎨', category: 'Frontend' },
-        { name: 'Bootstrap', icon: '📦', category: 'Frontend' },
-        { name: 'Tailwind CSS', icon: '🌊', category: 'Frontend' },
+  const skills = {
+    frontend: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js'],
+    backend: ['Node.js', 'Express', 'Python', 'PostgreSQL', 'MongoDB'],
+    tools: ['Git', 'Docker', 'AWS', 'Vite', 'Figma']
+  }
 
-        // Backend
-        { name: 'Node.js', icon: '🟢', category: 'Backend' },
-        { name: 'Express', icon: '⚡', category: 'Backend' },
-        { name: 'Python', icon: '🐍', category: 'Backend' },
-        { name: 'MongoDB', icon: '🍃', category: 'Backend' },
-        { name: 'PostgreSQL', icon: '🐘', category: 'Backend' },
-        { name: 'REST APIs', icon: '🔌', category: 'Backend' },
+  return (
+    <section id="skills" className="py-24 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 font-mono">Skills</h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full animate-pulse-glow"></div>
+        </div>
 
-        // Tools & DevOps
-        { name: 'Git', icon: '📚', category: 'Tools' },
-        { name: 'Docker', icon: '🐳', category: 'Tools' },
-        { name: 'AWS', icon: '☁️', category: 'Tools' },
-        { name: 'CI/CD', icon: '🔄', category: 'Tools' },
-        { name: 'Webpack', icon: '📦', category: 'Tools' },
-        { name: 'Vite', icon: '⚡', category: 'Tools' },
-    ]
-
-    const categories = ['Frontend', 'Backend', 'Tools']
-
-    return (
-        <section id="skills" className="skills-section">
-            <div className="container">
-                <div className="section-header">
-                    <h2 className="section-title">Skills & Technologies</h2>
-                    <div className="title-underline"></div>
-                </div>
-
-                <div className="skills-container">
-                    {categories.map((category) => (
-                        <div key={category} className="skill-category">
-                            <h3 className="category-title">{category}</h3>
-                            <div className="skills-grid">
-                                {skills
-                                    .filter((skill) => skill.category === category)
-                                    .map((skill, index) => (
-                                        <div
-                                            key={skill.name}
-                                            className="skill-card"
-                                            style={{ animationDelay: `${index * 0.12}s` }}
-                                        >
-                                            <div className="skill-icon">{skill.icon}</div>
-                                            <p className="skill-name">{skill.name}</p>
-                                        </div>
-                                    ))}
-                            </div>
-
-                        </div>
-                    ))}
-                </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          {Object.entries(skills).map(([category, skillList]) => (
+            <div key={category} className="glass-morphism rounded-2xl p-8 border border-white/10">
+              <h3 className="text-2xl font-bold text-blue-400 mb-6 capitalize font-mono">
+                {category === 'frontend' && '💻 Frontend'}
+                {category === 'backend' && '⚙️ Backend'}
+                {category === 'tools' && '🛠️ Tools'}
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {skillList.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-400 rounded-lg font-mono font-semibold text-sm hover:scale-105 transition-transform duration-300"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
-        </section>
-    )
+          ))}
+        </div>
+      </div>
+    </section>
+  )
 }

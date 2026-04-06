@@ -1,171 +1,131 @@
 import { useState } from 'react'
-import './Contact.css'
 
 export default function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-    })
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
 
-    const [submitted, setSubmitted] = useState(false)
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    console.log('Form submitted:', formData)
+    // Handle form submission here
+  }
 
-    const handleChange = (
-        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    ) => {
-        const { name, value } = e.target
-        setFormData((prev) => ({
-            ...prev,
-            [name]: value,
-        }))
-    }
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }))
+  }
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        // Here you would typically send the form data to a backend service
-        console.log('Form submitted:', formData)
-        setSubmitted(true)
-        setTimeout(() => {
-            setFormData({ name: '', email: '', subject: '', message: '' })
-            setSubmitted(false)
-        }, 3000)
-    }
+  return (
+    <section id="contact" className="py-24 relative">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 font-mono">Contact</h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full animate-pulse-glow"></div>
+        </div>
 
-    return (
-        <section id="contact" className="contact-section">
-            <div className="container">
-                <div className="section-header">
-                    <h2 className="section-title">Get In Touch</h2>
-                    <div className="title-underline"></div>
+        <div className="grid lg:grid-cols-2 gap-12">
+          <div>
+            <h3 className="text-2xl font-bold text-blue-400 mb-6 font-mono">Get In Touch</h3>
+            <p className="text-secondary-300 text-lg leading-relaxed mb-8">
+              I'm always interested in hearing about new projects and opportunities. 
+              Whether you have a question or just want to say hi, feel free to reach out!
+            </p>
+
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
                 </div>
-
-                <div className="row">
-                    <div className="col-lg-6 mb-4 mb-lg-0">
-                        <div className="contact-info">
-                            <h3 className="contact-info-title">Let's Connect</h3>
-                            <p className="contact-info-text">
-                                I'm always interested in hearing about new projects and opportunities.
-                                Feel free to reach out if you'd like to collaborate or just want to say hello!
-                            </p>
-
-                            <div className="contact-details">
-                                <div className="contact-item">
-                                    <div className="contact-icon">📧</div>
-                                    <div>
-                                        <h4>Email</h4>
-                                        <a href="mailto:your.email@example.com">phanphoun855@gmail.com</a>
-                                    </div>
-                                </div>
-
-                                <div className="contact-item">
-                                    <div className="contact-icon">📱</div>
-                                    <div>
-                                        <h4>Phone</h4>
-                                        <a href="tel:+1234567890">+855  713266899</a>
-                                    </div>
-                                </div>
-
-                                <div className="contact-item">
-                                    <div className="contact-icon">📍</div>
-                                    <div>
-                                        <h4>Location</h4>
-                                        <p>Phnom Penh, Cambodia</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="social-links">
-                                <a href="#" className="social-link" title="GitHub">
-                                    🤡
-                                </a>
-                                <a href="#" className="social-link" title="LinkedIn">
-                                    💼
-                                </a>
-                                <a href="#" className="social-link" title="Twitter">
-                                    🐦
-                                </a>
-                                <a href="#" className="social-link" title="Portfolio">
-                                    🌐
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-6">
-                        <form className="contact-form" onSubmit={handleSubmit}>
-                            <div className="mb-3">
-                                <label htmlFor="name" className="form-label">
-                                    Name
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="name"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-
-                            <div className="mb-3">
-                                <label htmlFor="email" className="form-label">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    id="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-
-                            <div className="mb-3">
-                                <label htmlFor="subject" className="form-label">
-                                    Subject
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="subject"
-                                    name="subject"
-                                    value={formData.subject}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-
-                            <div className="mb-3">
-                                <label htmlFor="message" className="form-label">
-                                    Message
-                                </label>
-                                <textarea
-                                    className="form-control"
-                                    id="message"
-                                    name="message"
-                                    rows={5}
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    required
-                                ></textarea>
-                            </div>
-
-                            <button
-                                type="submit"
-                                className="btn btn-primary btn-lg w-100"
-                                disabled={submitted}
-                            >
-                                {submitted ? '✓ Message Sent!' : 'Send Message'}
-                            </button>
-                        </form>
-                    </div>
+                <div>
+                  <div className="text-white font-semibold">Email</div>
+                  <div className="text-secondary-400">phanphoun855@gmail.com</div>
                 </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4m0 0V9a2 2 0 012-2h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-white font-semibold">Location</div>
+                  <div className="text-secondary-400">Cambodia</div>
+                </div>
+              </div>
             </div>
+          </div>
 
-        </section>
-    )
+          <div>
+            <form onSubmit={handleSubmit} className="glass-morphism rounded-2xl p-8 border border-white/10">
+              <div className="mb-6">
+                <label htmlFor="name" className="block text-white font-semibold mb-2">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-secondary-800/50 border border-secondary-600 rounded-lg text-white placeholder-secondary-400 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300"
+                  placeholder="Your Name"
+                />
+              </div>
+
+              <div className="mb-6">
+                <label htmlFor="email" className="block text-white font-semibold mb-2">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-secondary-800/50 border border-secondary-600 rounded-lg text-white placeholder-secondary-400 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300"
+                  placeholder="your.email@example.com"
+                />
+              </div>
+
+              <div className="mb-6">
+                <label htmlFor="message" className="block text-white font-semibold mb-2">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={5}
+                  className="w-full px-4 py-3 bg-secondary-800/50 border border-secondary-600 rounded-lg text-white placeholder-secondary-400 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 resize-none"
+                  placeholder="Your message here..."
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/25 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                Send Message
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4-4m4 4H7" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }

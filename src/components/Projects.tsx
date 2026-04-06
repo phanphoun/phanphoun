@@ -1,132 +1,75 @@
-import { useState } from 'react'
-import './Projects.css'
-
-interface Project {
-    id: number
-    title: string
-    description: string
-    image: string
-    technologies: string[]
-    demoLink: string
-    githubLink: string
-}
-
 export default function Projects() {
-    const [, setSelectedProject] = useState<number | null>(null)
+  const projects = [
+    {
+      title: 'E-Commerce Platform',
+      description: 'Full-stack e-commerce solution with React, Node.js, and PostgreSQL',
+      tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
+      link: '#'
+    },
+    {
+      title: 'Task Management App',
+      description: 'Real-time collaborative task management with WebSocket integration',
+      tech: ['Next.js', 'TypeScript', 'MongoDB', 'Socket.io'],
+      link: '#'
+    },
+    {
+      title: 'Weather Dashboard',
+      description: 'Interactive weather dashboard with data visualization',
+      tech: ['Vue.js', 'Chart.js', 'OpenWeather API'],
+      link: '#'
+    }
+  ]
 
-    const projects: Project[] = [
-        {
-            id: 1,
-            title: 'E-Commerce Platform',
-            description:
-                'A full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.',
-            image: 'https://www.spacestem.com/images/platform-ecommerce-uk.webp',
-            technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-            demoLink: '#',
-            githubLink: '#',
-        },
-        {
-            id: 2,
-            title: 'Task Management App',
-            description:
-                'A collaborative task management tool with real-time updates, team collaboration features, and progress tracking.',
-            image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop',
-            technologies: ['React', 'Firebase', 'TypeScript', 'Tailwind CSS'],
-            demoLink: '#',
-            githubLink: '#',
-        },
-        {
-            id: 3,
-            title: 'Analytics Dashboard',
-            description:
-                'A comprehensive analytics dashboard with data visualization, real-time metrics, and custom reporting capabilities.',
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
-            technologies: ['React', 'D3.js', 'Express', 'PostgreSQL'],
-            demoLink: '#',
-            githubLink: '#',
-        },
-        {
-            id: 4,
-            title: 'Social Media App',
-            description:
-                'A modern social media platform with user profiles, real-time messaging, and feed algorithms.',
-            image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=500&h=300&fit=crop',
-            technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
-            demoLink: '#',
-            githubLink: '#',
-        },
-        {
-            id: 5,
-            title: 'AI Content Generator',
-            description:
-                'An intelligent content generation tool powered by AI, helping users create high-quality content efficiently.',
-            image: 'https://www.rankmovers.com/wp-content/uploads/2022/01/ai-content-creation.png',
-            technologies: ['React', 'OpenAI API', 'Node.js', 'TypeScript'],
-            demoLink: '#',
-            githubLink: '#',
-        },
-        {
-            id: 6,
-            title: 'Weather Forecast App',
-            description:
-                'A beautiful weather application with real-time data, location-based forecasts, and interactive maps.',
-            image: 'https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=500&h=300&fit=crop',
-            technologies: ['React', 'OpenWeather API', 'Mapbox', 'Bootstrap'],
-            demoLink: '#',
-            githubLink: '#',
-        },
-    ]
+  return (
+    <section id="projects" className="py-24 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 font-mono">Projects</h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full animate-pulse-glow"></div>
+        </div>
 
-    return (
-        <section id="projects" className="projects-section">
-            <div className="container">
-                <div className="section-header">
-                    <h2 className="section-title">Featured Projects</h2>
-                    <div className="title-underline"></div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <div
+              key={project.title}
+              className="glass-morphism rounded-2xl p-6 border border-white/10 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 group"
+            >
+              <div className="mb-4">
+                <div className="w-full h-40 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg flex items-center justify-center mb-4">
+                  <div className="text-4xl">🚀</div>
                 </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
+                  {project.title}
+                </h3>
+                <p className="text-secondary-400 text-sm leading-relaxed">
+                  {project.description}
+                </p>
+              </div>
+              
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tech.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-2 py-1 bg-blue-500/20 text-blue-400 rounded text-xs font-mono font-semibold"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
-                <div className="projects-grid">
-                    {projects.map((project) => (
-                        <div
-                            key={project.id}
-                            className="project-card"
-                            onMouseEnter={() => setSelectedProject(project.id)}
-                            onMouseLeave={() => setSelectedProject(null)}
-                        >
-                            <div className="project-image-wrapper">
-                                <img
-                                    src={project.image}
-                                    alt={project.title}
-                                    className="project-image"
-                                />
-                                <div className="project-overlay">
-                                    <div className="overlay-content">
-                                        <a href={project.demoLink} className="btn btn-sm btn-light me-2">
-                                            Live Demo
-                                        </a>
-                                        <a href={project.githubLink} className="btn btn-sm btn-outline-light">
-                                            GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="project-content">
-                                <h3 className="project-title">{project.title}</h3>
-                                <p className="project-description">{project.description}</p>
-
-                                <div className="project-technologies">
-                                    {project.technologies.map((tech) => (
-                                        <span key={tech} className="tech-badge">
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+              <a
+                href={project.link}
+                className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-semibold text-sm transition-colors duration-300"
+              >
+                View Project
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4-4m4 4H7" />
+                </svg>
+              </a>
             </div>
-        </section>
-    )
+          ))}
+        </div>
+      </div>
+    </section>
+  )
 }
