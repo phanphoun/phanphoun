@@ -38,16 +38,23 @@ Software Engineer with expertise in full-stack development, backend systems, and
 
 ## 🚀 Featured Projects
 
-### 🛍️ A5-Ecommerce_Wachify
-Modern e-commerce platform built with HTML, CSS, and JavaScript.
+### 🛍️ Football Field Booking App
+Modern Football Field Platform that help people to:
+- Player: Find other team and request to join, view schedule play and get find field.
+- Capitan: approve request, invite member, create team, booking.
+- Field owner: List field, approve booking, set price/hours.
+- Admin: Full access, approve accound upgrade,manage users.
 
-**Tech Stack:** HTML5, CSS3, JavaScript, Bootstrap  
+**Tech Stack:** NodeJs, Express, ReactJs, Tailwindcss, MySQL
 **Features:**
 - User authentication
-- Product catalog
-- Shopping cart system
+- Account apgrade player - capitan - field owner.
+- chat
+- Real time alert
+- Booking
+- Payment
 
-🔗 GitHub: https://github.com/Seyha-Ny/A5-Ecommerce_Wachify
+🔗 GitHub: https://github.com/phanphoun/Football-Field-Booking-App
 
 ---
 
