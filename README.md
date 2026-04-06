@@ -14,8 +14,6 @@ Software Engineer with expertise in full-stack development, backend systems, and
 - 🎯 I focus on clean architecture and maintainable code  
 - 📚 I continuously learn and improve my technical skills  
 
-## 🛠️ Tech Stack
-
 ## 🛠️ Technologies & Tools
 ![](https://img.shields.io/badge/Code-JavaScript-informational?style=flat&color=informational&logo=javascript)
 ![](https://img.shields.io/badge/Code-React-informational?style=flat&color=informational&logo=react)
@@ -32,7 +30,7 @@ Software Engineer with expertise in full-stack development, backend systems, and
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Seyha-Ny&show_icons=true&theme=radical)
+![GitHub Stats](https://vercel.app)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Seyha-Ny&layout=compact&theme=radical)
 
