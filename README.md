@@ -14,31 +14,30 @@ Software Engineer with expertise in full-stack development, backend systems, and
 - 🎯 I focus on clean architecture and maintainable code  
 - 📚 I continuously learn and improve my technical skills  
 
----
-
 ## 🛠️ Tech Stack
 
 ### 🎨 Frontend
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Bootstrap
-- Tailwind CSS
-- React.js
-- Vue.js
+![](https://shields.io)
+![](https://shields.io)
+![](https://shields.io)
+![](https://shields.io)
+![](https://shields.io)
+![](https://shields.io)
+![](https://shields.io)
 
-### ⚙️ Backend
-- Node.js
-- Express.js
-- MongoDB
-- MySQL
+### ⚙️ Backend & Databases
+![](https://shields.io)
+![](https://shields.io)
+![](https://shields.io)
+![](https://shields.io)
 
 ### 🔧 Tools & Technologies
-- Git & GitHub
-- VS Code
-- Figma
-- Docker
-- RESTful APIs
+![](https://shields.io)
+![](https://shields.io)
+![](https://shields.io)
+![](https://shields.io)
+![](https://shields.io)
+![](https://shields.io)
 
 ---
 
