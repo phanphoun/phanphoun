@@ -1,4 +1,4 @@
-[![Header](https://github.com/AntonioErdeljac/AntonioErdeljac/blob/master/banner.png?raw=true "Header")](https://github.com/phanphoun?preview=true)
+[![Header]("https://www.codingtemple.com/wp-content/uploads/2024/03/A-Guide-to-the-Highest-Paying-Coding-Jobs-of-2024.png")](https://github.com/phanphoun?preview=true)
 
 # 👋 Hi, I'm Phoun
 ### 💻 Full-Stack & AI Engineer
