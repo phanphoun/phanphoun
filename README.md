@@ -1,9 +1,9 @@
 [![Header](https://compufield.com/images/sliders/prog-background.jpg)](https://github.com/phanphoun?preview=true)
 
 # 👋 Hi, I'm Phoun
-### 💻 Full-Stack & AI Engineer
+### 💻 Full-Stack Developer
 
-Software Engineer with expertise in full-stack development, backend systems, and AI-powered applications. Skilled in building scalable, intelligent systems that solve real-world problems. Passionate about machine learning, system design, and leveraging cutting-edge technologies to drive innovation.
+Software Engineer with strong expertise in designing and building scalable web applications across both frontend and backend. Experienced in developing robust APIs, optimizing system performance, and integrating AI-driven features to solve real-world problems. Passionate about clean architecture, modern frameworks, and leveraging emerging technologies to deliver efficient, user-focused solutions.
 
 ---
 
@@ -48,7 +48,7 @@ Modern Football Field Platform that help people to:
 **Tech Stack:** NodeJs, Express, ReactJs, Tailwindcss, MySQL
 **Features:**
 - User authentication
-- Account apgrade player - capitan - field owner.
+- Account apgrade player -> capitan -> field owner.
 - chat
 - Real time alert
 - Booking
