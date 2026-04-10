@@ -73,6 +73,48 @@ Modern Football Field Platform that help people to:
 
 ---
 
+### 🎓 Student Management System (SMS)
+Comprehensive full-stack educational management platform for institutions to manage students, teachers, courses, enrollments, and grades with advanced role-based access control.
+
+**Tech Stack:** Django 5, React 18, TypeScript, Vite, Tailwind CSS, SQLite/PostgreSQL
+
+**Features:**
+- ✅ JWT Authentication with access & refresh tokens
+- ✅ Role-based access control (Admin, Teacher, Student)
+- ✅ Full CRUD operations for users, courses, enrollments, grades
+- ✅ CSV export for students and grades
+- ✅ Advanced search, filtering, and pagination
+- ✅ OpenAPI/Swagger documentation
+- ✅ Comprehensive test suite with pytest
+- ✅ Modern UI with custom CSS animations
+- ✅ Portfolio-style help page with smooth scrolling
+
+**Key Capabilities:**
+- Admin: Manage users, courses, view all data, export reports
+- Teacher: Manage courses, assign grades to students
+- Student: View profile, enroll in courses, view grades
+
+🔗 GitHub: https://github.com/phanphoun/student-management-system
+🧪 Testing: Full test coverage with pytest and factory_boy
+
+---
+
+### 📊 Dev Review Dashboard
+Interactive, searchable dashboard for development teams to track, filter, and manage code review findings, vulnerabilities, and improvement recommendations.
+
+**Tech Stack:** TypeScript, Modern UI Framework
+
+**Features:**
+- 📈 Track code review findings
+- 🔍 Filter and search capabilities
+- ⚠️ Manage vulnerabilities
+- 📋 Improvement recommendations
+- 🎯 Developer-focused interface
+
+🔗 GitHub: https://github.com/phanphoun/dev-review-dashboard
+
+---
+
 ### 🌐 Portfolio Website
 Personal portfolio showcasing my projects and skills.
 
@@ -112,7 +154,7 @@ https://portfolio-afavapc9o-phanphounpncstudents.vercel.app/
 
 ## 💡 Philosophy
 
-> “The best way to predict the future is to invent it.” – Alan Kay
+> "The best way to predict the future is to invent it." – Alan Kay
 
 ---
 
