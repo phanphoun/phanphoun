@@ -27,6 +27,19 @@ Software Engineer with strong expertise in designing and building scalable web a
 ![](https://img.shields.io/badge/Tool-Docker-informational?style=flat&color=warning&logo=docker)
 
 ---
+---
+
+## 🧑‍💻 Skills
+
+- **Web Development**: HTML, CSS, JavaScript, TypeScript, Node.js, Vue, React, ASP.NET, Laravel  
+- **Backend Engineering**: RESTful APIs, Express.js, MySQL, scalable architecture, authentication & authorization  
+- **AI & Chatbots**: LINE Messaging API, NLP integration, conversational design  
+- **Branding & Creative Design**: UI/UX themes, posters, business cards, fantasy-inspired visuals  
+- **System Optimization & Troubleshooting**: Debugging, performance tuning, resourceful problem-solving  
+- **Collaboration & Community Engagement**: Poll creation, event organization, open-source contributions  
+
+---
+
 
 ## 📊 GitHub Stats
 
