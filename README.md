@@ -1,6 +1,6 @@
-[![Header](https://chatgpt.com/backend-api/estuary/content?id=file_000000002aa471faa166b020def816de&ts=493717&p=fs&cid=1&sig=4f4e739e1aeccf8cbd0cdc6140ad44534cc184ba9060caf652cbefe7342c4358&v=0)](https://github.com/phanphoun?preview=true)
-
-
+<p align="center">
+  <img src="./readme.png" alt="Header" width="100%" />
+</p>
 
 # [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&width=435&lines=%F0%9F%91%8B+Hi%2C+I'm+Phoun+)](https://git.io/typing-svg)
 ### 💻 Full-Stack Developer
