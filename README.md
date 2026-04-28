@@ -1,10 +1,8 @@
 [![Header](https://compufield.com/images/sliders/prog-background.jpg)](https://github.com/phanphoun?preview=true)
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Type+messages+everywhere!;Add+a+bio+to+your+profile!;Add+a+description+to+your+repo!;Make+your+readme+stand+out!&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000" alt="Example Usage - README Typing SVG">
-</p>
 
-# 👋 Hi, I'm Phoun
+
+# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&width=435&lines=%F0%9F%91%8B+Hi%2C+I'm+Phoun+)](https://git.io/typing-svg)
 ### 💻 Full-Stack Developer
 
 Software Engineer with strong expertise in designing and building scalable web applications across both frontend and backend. Experienced in developing robust APIs, optimizing system performance, and integrating AI-driven features to solve real-world problems. Passionate about clean architecture, modern frameworks, and leveraging emerging technologies to deliver efficient, user-focused solutions.
