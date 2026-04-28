@@ -1,5 +1,4 @@
-![Header](https://phanphoun/phanphoun/main/public/readme.png?raw=true)
-
+![Header](https://raw.githubusercontent.com/phanphoun/phanphoun/master/public/readme.png)
 # [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&width=435&lines=%F0%9F%91%8B+Hi%2C+I'm+Phoun+)](https://git.io/typing-svg)
 ### 💻 Full-Stack Developer
 
