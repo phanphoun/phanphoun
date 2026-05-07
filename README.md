@@ -1,5 +1,5 @@
 ![Header](https://raw.githubusercontent.com/phanphoun/phanphoun/master/public/readme.png)
-# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&width=435&lines=%F0%9F%91%8B+Hi%2C+I'm+Phoun+)](https://git.io/typing-svg)
+# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&width=435&lines=%F0%9F%91%8B+Hi%2C+Hello+I'm+Phoun+)](https://git.io/typing-svg)
 ### 💻 Full-Stack Developer
 
 Software Engineer with strong expertise in designing and building scalable web applications across both frontend and backend. Experienced in developing robust APIs, optimizing system performance, and integrating AI-driven features to solve real-world problems. Passionate about clean architecture, modern frameworks, and leveraging emerging technologies to deliver efficient, user-focused solutions.
@@ -36,16 +36,7 @@ Software Engineer with strong expertise in designing and building scalable web a
 - **Branding & Creative Design**: UI/UX themes, posters, business cards, fantasy-inspired visuals  
 - **System Optimization & Troubleshooting**: Debugging, performance tuning, resourceful problem-solving  
 - **Collaboration & Community Engagement**: Poll creation, event organization, open-source contributions  
-
 ---
-
-
-## 📊 GitHub Stats
-
-![GitHub Stats](https://vercel.app)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Seyha-Ny&layout=compact&theme=radical)
-
 ---
 
 ## 🚀 Featured Projects
@@ -146,7 +137,7 @@ https://portfolio-afavapc9o-phanphounpncstudents.vercel.app/
 📧 Email: phanphoun855@gmail.com  
 💼 LinkedIn: https://linkedin.com/in/phan-phoun-73baa2352  
 📘 Facebook: https://www.facebook.com/Jemokasakh  
-🌐 Portfolio: https://portfolio-afavapc9o-phanphounpncstudents.vercel.app/
+🌐 Portfolio: https://www.camdev.site/
 
 ---
 
