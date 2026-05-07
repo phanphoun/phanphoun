@@ -1,5 +1,5 @@
 ![Header](https://raw.githubusercontent.com/phanphoun/phanphoun/master/public/readme.png)
-# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&width=435&lines=%F0%9F%91%8B+%2C+Hello+I'm+Phoun+)](https://git.io/typing-svg)
+# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&width=435&lines=%F0%9F%91%8B+Hello+I'm+Phoun+)](https://git.io/typing-svg)
 ### 💻 Full-Stack Developer
 
 Software Engineer with strong expertise in designing and building scalable web applications across both frontend and backend. Experienced in developing robust APIs, optimizing system performance, and integrating AI-driven features to solve real-world problems. Passionate about clean architecture, modern frameworks, and leveraging emerging technologies to deliver efficient, user-focused solutions.
