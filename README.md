@@ -37,6 +37,43 @@ Software Engineer with strong expertise in designing and building scalable web a
 - **System Optimization & Troubleshooting**: Debugging, performance tuning, resourceful problem-solving  
 - **Collaboration & Community Engagement**: Poll creation, event organization, open-source contributions  
 ---
+```markdown
+## Engineering Stack
+
+<p align="left">
+  <a href="https://www.python.org" target="_blank">
+    <img src="https://skillicons.dev/icons?i=python" alt="Python" width="40" height="40"/>
+  </a>
+  <a href="https://azure.microsoft.com" target="_blank">
+    <img src="https://skillicons.dev/icons?i=azure" alt="Azure" width="40" height="40"/>
+  </a>
+  <a href="https://git-scm.com" target="_blank">
+    <img src="https://skillicons.dev/icons?i=git" alt="Git" width="40" height="40"/>
+  </a>
+  <a href="https://github.com" target="_blank">
+    <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="40" height="40"/>
+  </a>
+  <a href="https://code.visualstudio.com" target="_blank">
+    <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" width="40" height="40"/>
+  </a>
+  <a href="https://www.linux.org" target="_blank">
+    <img src="https://skillicons.dev/icons?i=linux" alt="Linux" width="40" height="40"/>
+  </a>
+  <a href="https://vercel.com" target="_blank">
+    <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" width="40" height="40"/>
+  </a>
+  <a href="https://html.com" target="_blank">
+    <img src="https://skillicons.dev/icons?i=html" alt="HTML5" width="40" height="40"/>
+  </a>
+  <a href="https://www.w3schools.com/css/" target="_blank">
+    <img src="https://skillicons.dev/icons?i=css" alt="CSS3" width="40" height="40"/>
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+    <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" width="40" height="40"/>
+  </a>
+</p>
+```
+
 ---
 
 ## 🚀 Featured Projects
