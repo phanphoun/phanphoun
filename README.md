@@ -1,188 +1,175 @@
 ![Header](https://raw.githubusercontent.com/phanphoun/phanphoun/master/public/readme.png)
-# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&width=435&lines=%F0%9F%91%8B+Hello+I'm+Phoun+)](https://git.io/typing-svg)
-### 💻 Full-Stack Developer
 
-Software Engineer with strong expertise in designing and building scalable web applications across both frontend and backend. Experienced in developing robust APIs, optimizing system performance, and integrating AI-driven features to solve real-world problems. Passionate about clean architecture, modern frameworks, and leveraging emerging technologies to deliver efficient, user-focused solutions.
+<h1 align="center">
+  👋 Hello, I'm Phoun
+</h1>
+
+<h3 align="center">
+  Full-Stack Developer • Software Engineer • Problem Solver
+</h3>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Developer;React+%7C+Vue+%7C+Node.js;Building+Modern+Web+Applications;Always+Learning+New+Technologies" />
+</p>
 
 ---
 
 ## 🚀 About Me
 
-- 🌐 I build responsive and user-friendly web applications  
-- ⚙️ I develop secure and scalable backend systems  
-- 🎯 I focus on clean architecture and maintainable code  
-- 📚 I continuously learn and improve my technical skills  
+Software Engineer passionate about building scalable web applications, modern UI systems, and backend architectures.
 
-## 🛠️ Technologies & Tools
-![](https://img.shields.io/badge/Code-JavaScript-informational?style=flat&color=informational&logo=javascript)
-![](https://img.shields.io/badge/Code-React-informational?style=flat&color=informational&logo=react)
-![](https://img.shields.io/badge/Code-TypeScript-informational?style=flat&color=informational)
-![](https://img.shields.io/badge/Code-Vue-informational?style=flat&color=informational&logo=vue.js)
-![](https://img.shields.io/badge/Code-EcmaScript-informational?style=flat&color=informational)
-![](https://img.shields.io/badge/Code-Node-informational?style=flat&color=informational&logo=node.js)
-![](https://img.shields.io/badge/Tool-Webpack-informational?style=flat&color=warning&logo=webpack)
-![](https://img.shields.io/badge/Tool-Jest-informational?style=flat&color=warning&logo=jest)
-![](https://img.shields.io/badge/Tool-SCSS-informational?style=flat&color=warning&logo=sass)
-![](https://img.shields.io/badge/Tool-Docker-informational?style=flat&color=warning&logo=docker)
+I enjoy creating clean, maintainable solutions using modern JavaScript ecosystems while continuously exploring AI integrations and cloud technologies.
+
+- 🌐 Building responsive full-stack applications
+- ⚙️ Designing scalable backend systems
+- 🎯 Focused on clean architecture & performance
+- 📚 Constantly learning and improving
 
 ---
----
 
-## 🧑‍💻 Skills
-
-- **Web Development**: HTML, CSS, JavaScript, TypeScript, Node.js, Vue, React, ASP.NET, Laravel  
-- **Backend Engineering**: RESTful APIs, Express.js, MySQL, scalable architecture, authentication & authorization  
-- **AI & Chatbots**: LINE Messaging API, NLP integration, conversational design  
-- **Branding & Creative Design**: UI/UX themes, posters, business cards, fantasy-inspired visuals  
-- **System Optimization & Troubleshooting**: Debugging, performance tuning, resourceful problem-solving  
-- **Collaboration & Community Engagement**: Poll creation, event organization, open-source contributions  
----
-
-## Engineering Stack
+## 🌐 Connect With Me
 
 <p align="left">
-  <a href="https://www.python.org" target="_blank">
-    <img src="https://skillicons.dev/icons?i=python" alt="Python" width="40" height="40"/>
+  <a href="https://linkedin.com/in/phan-phoun-73baa2352">
+    <img src="https://skillicons.dev/icons?i=linkedin" />
   </a>
-  <a href="https://azure.microsoft.com" target="_blank">
-    <img src="https://skillicons.dev/icons?i=azure" alt="Azure" width="40" height="40"/>
+  
+  <a href="https://github.com/phanphoun">
+    <img src="https://skillicons.dev/icons?i=github" />
   </a>
-  <a href="https://git-scm.com" target="_blank">
-    <img src="https://skillicons.dev/icons?i=git" alt="Git" width="40" height="40"/>
+
+  <a href="https://www.camdev.site/">
+    <img src="https://skillicons.dev/icons?i=vercel" />
   </a>
-  <a href="https://github.com" target="_blank">
-    <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="40" height="40"/>
-  </a>
-  <a href="https://code.visualstudio.com" target="_blank">
-    <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" width="40" height="40"/>
-  </a>
-  <a href="https://www.linux.org" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linux" alt="Linux" width="40" height="40"/>
-  </a>
-  <a href="https://vercel.com" target="_blank">
-    <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" width="40" height="40"/>
-  </a>
-  <a href="https://html.com" target="_blank">
-    <img src="https://skillicons.dev/icons?i=html" alt="HTML5" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3schools.com/css/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=css" alt="CSS3" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-    <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" width="40" height="40"/>
-  </a>
+</p>
+
+📧 phanphoun855@gmail.com
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+<p>
+  <img src="https://skillicons.dev/icons?i=react,vue,ts,js,html,css,tailwind,vite" />
+</p>
+
+### Backend
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,python,laravel,django,mysql" />
+</p>
+
+### Tools & DevOps
+<p>
+  <img src="https://skillicons.dev/icons?i=docker,git,github,vscode,linux,azure,webpack,jest" />
 </p>
 
 ---
 
-## 🚀 Featured Projects
+# 📊 GitHub Analytics
 
-### 🛍️ Football Field Booking App
-Modern Football Field Platform that help people to:
-- Player: Find other team and request to join, view schedule play and get find field.
-- Capitan: approve request, invite member, create team, booking.
-- Field owner: List field, approve booking, set price/hours.
-- Admin: Full access, approve accound upgrade,manage users.
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=phanphoun&show_icons=true&theme=tokyonight&hide_border=true" />
+  
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=phanphoun&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
 
-**Tech Stack:** NodeJs, Express, ReactJs, Tailwindcss, MySQL
-**Features:**
-- User authentication
-- Account apgrade player -> capitan -> field owner.
-- chat
-- Real time alert
-- Booking
-- Payment
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=phanphoun&theme=tokyonight&hide_border=true" />
+</p>
 
-🔗 GitHub: https://github.com/phanphoun/Football-Field-Booking-App
-🌐 Website: https://finall-vc1.vercel.app/
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=phanphoun&theme=tokyo-night&hide_border=true" />
+</p>
 
 ---
 
-### 🎓 Student Management System (SMS)
-Comprehensive full-stack educational management platform for institutions to manage students, teachers, courses, enrollments, and grades with advanced role-based access control.
+# 🚀 Featured Projects
 
-**Tech Stack:** Django 5, React 18, TypeScript, Vite, Tailwind CSS, SQLite/PostgreSQL
+## 🛍 Football Field Booking App
 
-**Features:**
-- ✅ JWT Authentication with access & refresh tokens
-- ✅ Role-based access control (Admin, Teacher, Student)
-- ✅ Full CRUD operations for users, courses, enrollments, grades
-- ✅ CSV export for students and grades
-- ✅ Advanced search, filtering, and pagination
-- ✅ OpenAPI/Swagger documentation
-- ✅ Comprehensive test suite with pytest
-- ✅ Modern UI with custom CSS animations
-- ✅ Portfolio-style help page with smooth scrolling
+Modern football field booking platform for players, captains, field owners, and administrators.
 
-**Key Capabilities:**
-- Admin: Manage users, courses, view all data, export reports
-- Teacher: Manage courses, assign grades to students
-- Student: View profile, enroll in courses, view grades
+### ✨ Features
+- Authentication & authorization
+- Real-time notifications
+- Team management
+- Booking system
+- Payment integration
+- Live chat
 
-🔗 GitHub: https://github.com/phanphoun/student-management-system
-🧪 Testing: Full test coverage with pytest and factory_boy
+### 🧰 Stack
+`Node.js` `Express.js` `React.js` `TailwindCSS` `MySQL`
 
----
+🔗 GitHub  
+https://github.com/phanphoun/Football-Field-Booking-App
 
-### 📊 Dev Review Dashboard
-Interactive, searchable dashboard for development teams to track, filter, and manage code review findings, vulnerabilities, and improvement recommendations.
-
-**Tech Stack:** TypeScript, Modern UI Framework
-
-**Features:**
-- 📈 Track code review findings
-- 🔍 Filter and search capabilities
-- ⚠️ Manage vulnerabilities
-- 📋 Improvement recommendations
-- 🎯 Developer-focused interface
-
-🔗 GitHub: https://github.com/phanphoun/dev-review-dashboard
+🌐 Live Demo  
+https://finall-vc1.vercel.app/
 
 ---
 
-### 🌐 Portfolio Website
-Personal portfolio showcasing my projects and skills.
+## 🎓 Student Management System
 
-🔗 Live Demo:  
-https://portfolio-afavapc9o-phanphounpncstudents.vercel.app/
+Educational management platform with advanced role-based access control.
+
+### ✨ Features
+- JWT Authentication
+- Role-based permissions
+- CRUD management
+- CSV exports
+- API documentation
+- Testing suite
+
+### 🧰 Stack
+`Django` `React` `TypeScript` `PostgreSQL`
+
+🔗 GitHub  
+https://github.com/phanphoun/student-management-system
 
 ---
 
-## 📈 Currently Learning
+## 📊 Dev Review Dashboard
+
+Developer-focused dashboard for tracking code review findings and vulnerabilities.
+
+### ✨ Features
+- Review tracking
+- Search & filtering
+- Vulnerability management
+- Developer analytics
+
+🔗 GitHub  
+https://github.com/phanphoun/dev-review-dashboard
+
+---
+
+# 📚 Currently Learning
 
 - Advanced React patterns
-- TypeScript for type-safe development
-- State management solutions
+- Scalable system architecture
 - Cloud deployment (AWS / Azure)
-- Scalable application architecture
+- TypeScript best practices
+- Performance optimization
 
 ---
 
-## 🎯 2026 Goals
+# 🎯 2026 Goals
 
-- Contribute to 10+ open-source projects  
-- Build 3+ production-ready applications  
-- Master advanced React and TypeScript  
-- Deploy applications using cloud services  
-- Grow a technical blog  
-
----
-
-## 🤝 Connect With Me
-
-📧 Email: phanphoun855@gmail.com  
-💼 LinkedIn: https://linkedin.com/in/phan-phoun-73baa2352  
-📘 Facebook: https://www.facebook.com/Jemokasakh  
-🌐 Portfolio: https://www.camdev.site/
+- 🚀 Contribute to more open-source projects
+- 🧠 Master advanced backend architecture
+- ☁️ Deploy production cloud applications
+- ✍️ Start technical blogging
+- 🌍 Build impactful real-world products
 
 ---
 
-## 💡 Philosophy
+# 💡 Philosophy
 
-> "The best way to predict the future is to invent it." – Alan Kay
+> “The best way to predict the future is to invent it.” — Alan Kay
 
 ---
 
-⭐ If you like my work, consider giving my repositories a star!
-
-[![Banner](https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)](https://t.me/thoeutthine)
+<p align="center">
+  ⭐ Thanks for visiting my profile!
+</p>
