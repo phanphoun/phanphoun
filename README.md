@@ -144,6 +144,51 @@ https://github.com/phanphoun/dev-review-dashboard
 
 ---
 
+## 🤖 Telegram AI Bot
+
+AI-powered Telegram chatbot designed to provide intelligent conversations, automation, and real-time interaction directly inside Telegram.
+
+### ✨ Features
+
+- 💬 Real-time AI chat responses
+- 🧠 Context-aware conversations
+- ⚡ Fast and lightweight bot architecture
+- 🔐 Secure environment variable configuration
+- 🌐 Telegram Bot API integration
+- 🛠 Easy deployment and setup
+- 📦 Modular and maintainable project structure
+- 🔄 Command handling system
+- 🚀 Scalable backend design
+- 🤝 User-friendly interaction flow
+
+### 🎯 Capabilities
+
+- Answer user questions intelligently
+- Automate repetitive chat tasks
+- Handle Telegram commands dynamically
+- Support conversational AI workflows
+- Extendable for future AI integrations
+
+### 🧰 Tech Stack
+
+`Node.js` `Telegram Bot API` `JavaScript` `AI Integration`
+
+### 🚀 Future Improvements
+
+- Voice message support
+- Image generation integration
+- Conversation memory
+- Multi-language support
+- Admin dashboard
+- User analytics system
+
+🔗 GitHub  
+https://github.com/phanphoun/telegram-ai-bot
+
+---
+
+---
+
 # 📚 Currently Learning
 
 - Advanced React patterns
