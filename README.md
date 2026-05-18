@@ -37,7 +37,7 @@ Software Engineer with strong expertise in designing and building scalable web a
 - **System Optimization & Troubleshooting**: Debugging, performance tuning, resourceful problem-solving  
 - **Collaboration & Community Engagement**: Poll creation, event organization, open-source contributions  
 ---
-```markdown
+
 ## Engineering Stack
 
 <p align="left">
@@ -72,7 +72,6 @@ Software Engineer with strong expertise in designing and building scalable web a
     <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" width="40" height="40"/>
   </a>
 </p>
-```
 
 ---
 
