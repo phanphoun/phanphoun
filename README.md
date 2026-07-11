@@ -86,6 +86,119 @@ I enjoy creating clean, maintainable solutions using modern JavaScript ecosystem
 
 # 🚀 Featured Projects
 
+## 📦 Bondarnh Business Packaging Platform
+
+Enterprise-grade packaging, inventory, and business operations management platform built for modern businesses.
+
+### ✨ Features
+- Multi-role authentication & authorization
+- Packaging workflow management
+- Inventory & stock management
+- Customer & supplier management
+- Order & production tracking
+- Dashboard analytics & reporting
+- RESTful API architecture
+- Secure JWT authentication
+
+### 🧰 Tech Stack
+`Node.js` `Express.js` `React.js` `TypeScript` `MySQL` `Tailwind CSS`
+
+🔗 GitHub  
+https://github.com/bondarnh-packaging
+
+---
+
+## 🛒 ShopShare E-Commerce Platform
+
+Modern full-stack e-commerce platform that enables users to browse, purchase, and manage products through an intuitive shopping experience.
+
+### ✨ Features
+- User authentication
+- Product catalog & categories
+- Advanced product search & filtering
+- Shopping cart
+- Wishlist
+- Order management
+- Admin dashboard
+- Responsive UI
+- REST API integration
+
+### 🧰 Tech Stack
+`React.js` `Node.js` `Express.js` `MySQL` `Tailwind CSS`
+
+🔗 GitHub  
+https://github.com/phanphoun/shopshare-ecommerce-platform
+
+🌐 Live Demo  
+https://shopshare.camdev.site
+
+---
+
+## ⚽ Football Field Booking App
+
+Modern football field booking platform for players, captains, field owners, and administrators.
+
+### ✨ Features
+- Authentication & authorization
+- Real-time notifications
+- Team management
+- Football field booking
+- Payment integration
+- Live chat
+- Admin dashboard
+
+### 🧰 Tech Stack
+`Node.js` `Express.js` `React.js` `Tailwind CSS` `MySQL`
+
+🔗 GitHub  
+https://github.com/phanphoun/Football-Field-Booking-App
+
+🌐 Live Demo  
+https://finall-vc1.vercel.app/
+
+---
+
+## 🤖 Telegram AI Bot
+
+AI-powered Telegram chatbot designed to automate conversations and provide intelligent responses.
+
+### ✨ Features
+- AI-powered conversations
+- Telegram Bot API integration
+- Command handling
+- Context-aware responses
+- Modular architecture
+- Environment configuration
+- Easy deployment
+
+### 🧰 Tech Stack
+`Node.js` `Telegram Bot API` `JavaScript` `AI Integration`
+
+🔗 GitHub  
+https://github.com/phanphoun/telegram-ai-bot
+
+---
+
+## 🎓 Student Management System
+
+Educational management platform with role-based access control.
+
+### ✨ Features
+- JWT Authentication
+- RBAC authorization
+- Student & teacher management
+- CRUD operations
+- CSV export
+- API documentation
+- Testing
+
+### 🧰 Tech Stack
+`Django` `React` `TypeScript` `PostgreSQL`
+
+🔗 GitHub  
+https://github.com/phanphoun/student-management-system
+
+
 ## 🛍 Football Field Booking App
 
 Modern football field booking platform for players, captains, field owners, and administrators.
